@@ -25,3 +25,27 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* For Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #EEBC70, #FDE497); /* gradient color of the scroll thumb */
+  border-radius: 6px; /* roundness of the scroll thumb */
+  border: 3px solid transparent; /* creattes padding around scroll thumb */
+}
+
+
+.custom-gradient {
+  background: linear-gradient(to right, 
+    #FDE497 49%, 
+    #FDE497  0%,
+    #BA7F3B 14%, 
+    #FDE497 0%);
+}
