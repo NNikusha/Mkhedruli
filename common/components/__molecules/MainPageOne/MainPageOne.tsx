@@ -1,14 +1,14 @@
 import "common/assets/globals.css";
 import React from "react";
 import GoDown from "../../../../public/icons/GoDown";
-import GoldLineMainPageOne from "../../../../public/icons/GoldLineMainPageOne";
+import GoldLine from "../../__atoms/GoldLine/GoldLine";
 
 const MainPageOne = () => {
   return (
     <section className="h-screen bg-mainPageOnebg bg-bottom bg-cover bg-no-repeat">
       <div className="w-full h-full flex flex-col justify-center px-[110px] pb-[100px] bg-black bg-opacity-60">
         <div className="text-white text-8xl flex items-center gap-[74px] flex-1">
-          <GoldLineMainPageOne className="" />
+          <GoldLine className="w-[4px] h-[263px]" />
           <div className="flex flex-col gap-10">
             <p>STATE SONG AND</p>
             <p>DANCE</p>

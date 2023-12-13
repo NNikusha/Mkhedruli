@@ -1,4 +1,3 @@
-import "common/assets/globals.css";
 import { GlobalContextProvider } from "../../../store/store";
 import Header from "../Header/Header";
 

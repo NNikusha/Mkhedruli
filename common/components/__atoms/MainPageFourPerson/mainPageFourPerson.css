@@ -1,0 +1,14 @@
+.person {
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /* Apply grayscale and reduce brightness for a dark-white effect */
+}
+
+.person:hover {
+    background-color: #f87171;
+    transform: translateY(-50px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    box-shadow: 0px 11px 28.9px 0px rgba(253, 228, 151, 0.26);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); /* Ensure full color for the active slide */
+}
