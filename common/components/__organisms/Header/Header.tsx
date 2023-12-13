@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-transparent text-white text-2xl flex justify-between px-10 py-10 fixed w-full items-center backdrop-blur-md">
+    <header className="bg-transparent text-white text-2xl flex justify-between px-10 py-10 fixed w-full items-center backdrop-blur-md z-20">
       <Image
         src={"/icons/logo.svg"}
         alt="logo"

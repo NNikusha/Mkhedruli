@@ -9,3 +9,9 @@
   .custom-border {
     border: 1px solid rgba(253, 228, 151, 0.49);
   }
+
+  @media (min-width: 369px) and (max-width: 639px) {
+    .custom-grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

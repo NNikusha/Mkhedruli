@@ -10,10 +10,13 @@ const config: Config = {
     extend: {
       backgroundImage: {
         mainPageOnebg : "url('/images/mainPhoto.png')",
-        mainPageThreebg : "url('/images/background.svg')"
+        mainPageThreebg : "url('/images/background.svg')",
+        dancersPiramid:"url('/images/dancersPiramid.png')"
       },
     },
   },
   plugins: [],
 }
 export default config
+
+
