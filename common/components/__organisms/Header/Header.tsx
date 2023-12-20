@@ -23,16 +23,6 @@ const Header = () => {
       <div className=" gap-[2vw] text-[#FFFFFF66] hidden lg:flex">
         <Link
           className="hover:text-white duration-100 cursor-pointer"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          HOME
-        </Link>
-        <Link
-          className="hover:text-white duration-100 cursor-pointer"
           to="theShow"
           spy={true}
           smooth={true}
@@ -51,36 +41,24 @@ const Header = () => {
         >
           THE TRADITION
         </Link>
-        <Link
+        <a
+          href="TourDates"
           className="hover:text-white duration-100 cursor-pointer"
-          to="tourDates"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
         >
           TOUR DATES
-        </Link>
-        <Link
+        </a>
+        <a
+          href="Media"
           className="hover:text-white duration-100 cursor-pointer"
-          to="media"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
         >
           MEDIA
-        </Link>
-        <Link
+        </a>
+        <a
+          href="Gallery"
           className="hover:text-white duration-100 cursor-pointer"
-          to="gallery"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
         >
           GALLERY
-        </Link>
+        </a>
       </div>
       <p className="hidden lg:block">EN</p>
       <BurgerBtn isOpen={isOpen} setIsOpen={setIsOpen} />

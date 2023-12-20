@@ -8,7 +8,7 @@ interface SwiperButton {
 
 const SwiperButton = ({ handleNextSlide, handlePrevSlide }) => {
   return (
-    <div className="flex w-fit rounded-lg overflow-hidden">
+    <div className="flex w-fit rounded-lg overflow-hidden z-10">
       <button
         type="button"
         className="3xl:px-[25px] 3xl:py-[10px] px-[14px] py-[6px] bg-[#FFFFFF1A]"

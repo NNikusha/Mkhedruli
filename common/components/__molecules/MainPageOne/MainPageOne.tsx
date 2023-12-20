@@ -1,7 +1,9 @@
+"use client";
 import "common/assets/globals.css";
 import React from "react";
 import GoDown from "../../../../public/icons/GoDown";
 import GoldLine from "../../__atoms/GoldLine/GoldLine";
+import { Link } from "react-scroll";
 
 const MainPageOne = () => {
   return (
@@ -25,13 +27,31 @@ const MainPageOne = () => {
           </div>
         </div>
         <div className="flex  justify-between flex-col lg:flex-row lg:w-full w-fit items-center h-full lg:h-auto">
-          <GoDown className="3xl:w-[100px] 3xl:h-[100px] lg:w-[68px] lg:h-[68px] w-[74px] h-[74px] cursor-pointer order-2 lg:order-1" />
-          <button
-            type="button"
-            className="text-white 3xl:py-6 3xl:px-14 lg:px-12 lg:py-4 bg-yellow-300 rounded-full 3xl:text-3xl text-base shadow-md custom-gradient custom-border w-[190px] 3xl:w-[380px] lg:w-[260px] px-0 py-4 order-1 lg:order-2"
+          <Link
+            className="hover:text-white duration-100 cursor-pointer"
+            to="theTradition"
+            spy={true}
+            smooth={true}
+            offset={-30}
+            duration={500}
           >
-            Watch Now
-          </button>
+            <GoDown className="3xl:w-[100px] 3xl:h-[100px] lg:w-[68px] lg:h-[68px] w-[74px] h-[74px] cursor-pointer order-2 lg:order-1" />
+          </Link>
+          <Link
+            className="hover:text-white duration-100 cursor-pointer"
+            to="mainPageTwoVideo"
+            spy={true}
+            smooth={true}
+            offset={-30}
+            duration={500}
+          >
+            <button
+              type="button"
+              className="text-white 3xl:py-6 3xl:px-14 lg:px-12 lg:py-4 bg-yellow-300 rounded-full 3xl:text-3xl text-base shadow-md custom-gradient custom-border w-[190px] 3xl:w-[380px] lg:w-[260px] px-0 py-4 order-1 lg:order-2"
+            >
+              Watch Now
+            </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -9,17 +9,34 @@ import "./MainPageFiveSwiper.css";
 import SwiperButton from "../SwiperButtons/SwiperButton";
 
 const SwiperData = [
-  { image: "/images/mainPhoto.png", title: "asdgfasdfgadfgadfgadfg" },
-  { image: "/images/manImage.png", title: "asdgfasdfgadfgadfgadfg" },
-  { image: "/images/mainPhoto.png", title: "asdgfasdfgadfgadfgadfg" },
-  { image: "/images/manImage.png", title: "asdgfasdfgadfgadfgadfg" },
-  { image: "/images/mainPhoto.png", title: "asdgfasdfgadfgadfgadfg" },
-  { image: "/images/manImage.png", title: "asdgfasdfgadfgadfgadfg" },
-  { image: "/images/mainPhoto.png", title: "asdgfasdfgadfgadfgadfg" },
-  { image: "/images/manImage.png", title: "asdgfasdfgadfgadfgadfg" },
+  {
+    image: "/images/mainPhoto.png",
+    title:
+      "Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+  },
+  {
+    image: "/images/manImage.png",
+    title:
+      "Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+  },
+  {
+    image: "/images/mainPhoto.png",
+    title:
+      "Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+  },
+  {
+    image: "/images/manImage.png",
+    title:
+      "Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+  },
 ];
 function MainPageFiveSwiper() {
   const middleIndex = Math.floor(SwiperData.length / 2);
+  const [centerIndex, setCenterIndex] = useState(middleIndex);
+
+  const handleAfterChange = (currentSlide) => {
+    setCenterIndex(currentSlide);
+  };
   const ref = useRef(null);
 
   const handleNextSlide = () => {
@@ -42,6 +59,7 @@ function MainPageFiveSwiper() {
     centerPadding: "0px",
     draggable: true,
     initialSlide: middleIndex,
+    afterChange: handleAfterChange,
   };
   return (
     <>
@@ -51,10 +69,11 @@ function MainPageFiveSwiper() {
             image={assessment.image}
             title={assessment.title}
             key={i}
+            isCenterActive={i === centerIndex}
           />
         ))}
       </Slider>
-      <div className="w-full flex lg:justify-end justify-center lg:pr-24 mt-5 3xl:mt-24 ">
+      <div className="w-full flex lg:justify-end justify-center lg:pr-24 lg:mt-5 3xl:mt-24 mt-24 ">
         <SwiperButton
           handleNextSlide={handleNextSlide}
           handlePrevSlide={handlePrevSlide}
