@@ -5,7 +5,7 @@ const HistoryPageOne = () => {
   return (
     <div className='h-screen bg-historyPhoto bg-bottom bg-cover bg-no-repeat'>
     <div className="w-full h-full flex flex-col justify-center px-[110px] pb-[100px] bg-black bg-opacity-60">
-        <div className='text-white pt-[500px]'>
+        <div className=' justify-center text-white pt-[500px]'>
             <div className='flex flex-col justify-center pb-[220px] '>
                 <div className='font-bold  pb-4 uppercase text-4xl'>
                     our history
