@@ -4,8 +4,8 @@ import { IconProps } from "../../utils/types/mainTypes";
 const SwiperArrow = ({ className }: IconProps) => {
   return (
     <svg
-      width="50"
-      height="50"
+      width="0"
+      height="0"
       viewBox="0 0 50 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

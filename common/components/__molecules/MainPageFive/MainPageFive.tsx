@@ -1,14 +1,20 @@
 import React from "react";
-import SwiperButton from "../../__atoms/SwiperButton/SwiperButton";
+import SwiperButton from "../../__atoms/SwiperButtons/SwiperButton";
 import MainPageFiveSwiper from "../../__atoms/MainPageFiveSwiper/MainPageFiveSwiper";
+import GoldOvalLine from "../../../../public/icons/GoldOvalLine";
 
 const MainPageFive = () => {
   return (
-    <section className="h-screen w-full bg-[#161616] bg-mainPageThreebg bg-cover items-center flex flex-col justify-center overflow-hidden">
+    <section
+      className="3xl:h-[95vh] lg:h-[90vh]   w-full  items-center flex flex-col pb-5 justify-end overflow-hidden gap-2 3xl:gap-10 relative"
+      id="theShow"
+    >
+      <GoldOvalLine className="absolute w-full top-[-10px] left-0 rotate-[-22deg]" />
+
+      <h3 className="3xl:text-[80px] lg:text-6xl text-[40px]   mb-20  font-bold text-white">
+        THE SHOW
+      </h3>
       <MainPageFiveSwiper />
-      <div>
-        <SwiperButton nextBtn={"btn-next"} prevBtn={"btn-prev"} />
-      </div>
     </section>
   );
 };

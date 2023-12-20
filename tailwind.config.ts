@@ -7,7 +7,11 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    
     extend: {
+      fontFamily: {
+        montserrat: ['var(--font-montserrat)'],
+      },
       backgroundImage: {
         mainPageOnebg : "url('/images/mainPhoto.png')",
         mainPageThreebg : "url('/images/background.svg')",
@@ -16,6 +20,9 @@ const config: Config = {
         mkhedruliDancers :"url('/images/mkhedruliDancers.png')",
         musicians:"url('/images/musicians.png')"
 
+      },
+      screens: {
+        '3xl': '1600px', 
       },
     },
   },

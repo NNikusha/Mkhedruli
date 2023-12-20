@@ -20,3 +20,10 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+
+.gradient-text {
+  background: linear-gradient(90deg, #FDE497 25%, #BA7F3B 50%, #FDE497 75%);
+  -webkit-background-clip: text;
+  color: transparent;
+}

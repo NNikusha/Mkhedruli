@@ -1,38 +1,89 @@
+"use client";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/navigation";
+// import Link from "next/link";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+import BurgerBtn from "../../__atoms/BurgerBtn/BurgerBtn";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const router = useRouter();
   return (
-    <header className="bg-transparent text-white text-2xl flex justify-between px-10 py-10 fixed w-full items-center backdrop-blur-md z-20">
+    <header className="bg-transparent text-white 3xl:text-2xl text-base flex justify-between 3xl:px-10 3xl:py-6 px-8 py-2  fixed w-full items-center backdrop-blur-md z-50">
       <Image
         src={"/icons/logo.svg"}
         alt="logo"
         width={0}
         height={0}
-        className="w-[62px] h-[57px]"
+        className="3xl:w-[62px] 3xl:h-[57px] w-[52px] h-[47px] cursor-pointer"
+        onClick={() => router.push("/")}
       />
-      <div className="flex gap-[2vw] text-[#FFFFFF66] ">
-        <Link className="hover:text-white duration-100" href="/">
+      <div className=" gap-[2vw] text-[#FFFFFF66] hidden lg:flex">
+        <Link
+          className="hover:text-white duration-100 cursor-pointer"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
           HOME
         </Link>
-        <Link className="hover:text-white duration-100" href="/">
+        <Link
+          className="hover:text-white duration-100 cursor-pointer"
+          to="theShow"
+          spy={true}
+          smooth={true}
+          offset={-60}
+          duration={500}
+        >
           THE SHOW
         </Link>
-        <Link className="hover:text-white duration-100" href="/">
+        <Link
+          className="hover:text-white duration-100 cursor-pointer"
+          to="theTradition"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           THE TRADITION
         </Link>
-        <Link className="hover:text-white duration-100" href="/">
+        <Link
+          className="hover:text-white duration-100 cursor-pointer"
+          to="tourDates"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           TOUR DATES
         </Link>
-        <Link className="hover:text-white duration-100" href="/">
+        <Link
+          className="hover:text-white duration-100 cursor-pointer"
+          to="media"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           MEDIA
         </Link>
-        <Link className="hover:text-white duration-100" href="/">
+        <Link
+          className="hover:text-white duration-100 cursor-pointer"
+          to="gallery"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           GALLERY
         </Link>
       </div>
-      <p>EN</p>
+      <p className="hidden lg:block">EN</p>
+      <BurgerBtn isOpen={isOpen} setIsOpen={setIsOpen} />
     </header>
   );
 };
