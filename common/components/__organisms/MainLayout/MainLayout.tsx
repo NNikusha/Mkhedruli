@@ -8,7 +8,7 @@ export default function MainLayout({
 }) {
   return (
     <GlobalContextProvider>
-      <div className="">
+      <div className="overflow-x-hidden">
         <Header />
         {children}
       </div>

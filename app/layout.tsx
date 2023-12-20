@@ -1,5 +1,7 @@
 import MainLayout from "../common/components/__organisms/MainLayout/MainLayout";
 import { Montserrat } from "next/font/google";
+import "common/assets/globals.css";
+
 
 const montserrat = Montserrat({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
