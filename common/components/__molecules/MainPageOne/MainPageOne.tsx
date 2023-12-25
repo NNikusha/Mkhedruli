@@ -4,11 +4,12 @@ import React from "react";
 import GoDown from "../../../../public/icons/GoDown";
 import GoldLine from "../../__atoms/GoldLine/GoldLine";
 import { Link } from "react-scroll";
+import { useGlobalContext } from "../../../store/store";
 
 const MainPageOne = () => {
   return (
     <section
-      className="h-screen bg-mainPageOnebg bg-bottom bg-cover bg-no-repeat "
+      className="h-screen bg-mainPageOnebg bg-bottom bg-cover bg-no-repeat relative overflow-hidden"
       id="home"
     >
       <div className="w-full h-full flex flex-col justify-center px-[110px] 3xl:pb-[100px] pb-[50px] bg-black bg-opacity-60 items-center lg:items-start gap-[70px] lg:gap-0">

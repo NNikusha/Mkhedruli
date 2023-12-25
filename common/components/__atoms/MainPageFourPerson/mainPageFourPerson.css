@@ -2,9 +2,11 @@
     transition: transform 0.3s ease;
 }
 
-.animation:hover {
-    background-color: #f87171;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
-    box-shadow: 0px 11px 28.9px 0px rgba(253, 228, 151, 0.26);
-    transform: translateY(-50px);
+@media (min-width: 1024px) {
+    .animation:hover {
+        background-color: #f87171;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+        box-shadow: 0px 11px 28.9px 0px rgba(253, 228, 151, 0.26);
+        transform: translateY(-50px);
+    }
 }

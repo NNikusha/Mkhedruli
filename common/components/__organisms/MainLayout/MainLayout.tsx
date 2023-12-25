@@ -8,7 +8,7 @@ export default function MainLayout({
 }) {
   return (
     <GlobalContextProvider>
-      <div className="font-montserrat overflow-x-hidden">
+      <div className="font-montserrat overflow-x-hidden overflow-y-hidden">
         <Header />
         {children}
       </div>

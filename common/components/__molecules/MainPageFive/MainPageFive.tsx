@@ -11,8 +11,8 @@ const MainPageFive = () => {
     >
       <GoldOvalLine className="absolute w-full top-[-10px] left-0 rotate-[-22deg]" />
 
-      <h3 className="3xl:text-[80px] lg:text-6xl text-[40px]   mb-20  font-bold text-white">
-        THE SHOW
+      <h3 className="3xl:text-[80px] lg:text-6xl text-[40px]   mb-20  font-bold text-white text-center">
+        THE <br className="block lg:hidden"></br> SHOW
       </h3>
       <MainPageFiveSwiper />
     </section>

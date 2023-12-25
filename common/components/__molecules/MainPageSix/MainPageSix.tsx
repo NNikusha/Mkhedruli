@@ -56,12 +56,12 @@ const MainPageSix = () => {
                   <InstaIcon className="" />
                 </Link>
                 <Link href={""}>
-                  <TwitterIcon className="" />
-                </Link>
-                <Link href={""}>
                   <FacebookIcon className="" />
                 </Link>
-                <Link href={""}>
+                <Link
+                  href={"https://www.youtube.com/@besikgorjoladze4536"}
+                  target="_blank"
+                >
                   <YoutubeIcon className="" />
                 </Link>
               </div>

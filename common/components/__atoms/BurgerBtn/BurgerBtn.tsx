@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 
 interface BurgerBtnProps {
   isOpen: boolean;
-  setIsOpen: () => void;
+  setIsOpen: (isOpen: boolean) => void;
 }
 
-const BurgerBtn = ({ isOpen, setIsOpen }: any) => {
+const BurgerBtn = ({ isOpen, setIsOpen }: BurgerBtnProps) => {
   const slide1Ref = useRef<HTMLDivElement>(null);
   const slide2Ref = useRef<HTMLDivElement>(null);
   const slide3Ref = useRef<HTMLDivElement>(null);
@@ -36,7 +36,7 @@ const BurgerBtn = ({ isOpen, setIsOpen }: any) => {
   return (
     <button
       type="button"
-      className="flex lg:hidden flex-col justify-between w-8 h-5"
+      className="flex lg:hidden flex-col justify-between w-8 h-5 z-50"
       onClick={handleMenuClick}
     >
       <div

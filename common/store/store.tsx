@@ -3,20 +3,20 @@
 import { createContext, useContext, useState } from "react";
 
 interface ContextProps {
-  signInmodalOpen: boolean;
-  setSignInModalOpen: (modalOpen: boolean) => void;
+  burgerMenuOpen: boolean;
+  setBurgerMenuOpen: (modalOpen: boolean) => void;
 }
 
 const GlobalContext = createContext<ContextProps>({
-  signInmodalOpen: false,
-  setSignInModalOpen: (signInmodalOpen: boolean) => {},
+  burgerMenuOpen: false,
+  setBurgerMenuOpen: (signInmodalOpen: boolean) => {},
 });
 
 export const GlobalContextProvider = ({ children }: any) => {
-  const [signInmodalOpen, setSignInModalOpen] = useState<boolean>(false);
+  const [burgerMenuOpen, setBurgerMenuOpen] = useState<boolean>(false);
 
   return (
-    <GlobalContext.Provider value={{ signInmodalOpen, setSignInModalOpen }}>
+    <GlobalContext.Provider value={{ burgerMenuOpen, setBurgerMenuOpen }}>
       {children}
     </GlobalContext.Provider>
   );

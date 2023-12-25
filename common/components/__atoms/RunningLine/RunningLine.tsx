@@ -5,7 +5,7 @@ import "common/assets/globals.css";
 const RunningLine = () => {
   return (
     <Marquee
-      className=" w-full lg:text-6xl text-3xl text-white mb-[60px] overflow-hidden "
+      className=" w-full lg:text-6xl text-3xl text-white lg:mb-[60px] overflow-hidden "
       speed={100}
     >
       <p className="shadow-xl gradient-text font-bold 3xl:tracking-widest tracking-normal">

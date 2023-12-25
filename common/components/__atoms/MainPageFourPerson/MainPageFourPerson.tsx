@@ -16,10 +16,10 @@ const MainPageFourPerson = ({
   image,
 }: Person) => {
   return (
-    <div className="animation group 3xl:w-[324px] w-[250px] cursor-pointer flex items-end flex-col relative justify-end animation">
+    <div className=" group 3xl:w-[324px] w-[250px] cursor-pointer flex items-end flex-col relative justify-end animation z-20">
       <div
         style={{ backgroundImage: `url(${image})` }}
-        className={` w-full h-full  bg-no-repeat absolute bg-cover grayscale  group-hover:grayscale-0`}
+        className={` w-full h-full  bg-no-repeat absolute bg-cover lg:grayscale  group-hover:grayscale-0`}
       ></div>
       <div className="flex flex-col w-full 3xl:px-5 3xl:py-12 py-6 px-3 z-10">
         <p className="text-white 3xl:text-2xl text-base font-semibold ">
