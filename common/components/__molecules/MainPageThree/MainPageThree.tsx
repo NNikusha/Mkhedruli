@@ -2,13 +2,11 @@ import React from "react";
 import ReadMore from "../../__atoms/ReadMore/ReadMore";
 import GoldOvalLine from "../../../../public/icons/GoldOvalLine";
 import ReadMoreArrow from "../../../../public/icons/ReadMoreArrow";
+import Link from "next/link";
 
 const MainPageThree = () => {
   return (
-    <section
-      className="xl:h-screen  flex-col px-10 justify-center lg:pt-20 pt-10  relative"
-      id="theTradition"
-    >
+    <section className="xl:h-screen  flex-col px-10 justify-center lg:pt-20 pt-10  relative">
       <GoldOvalLine className="absolute w-full  top-0 3xl:top-32 left-0  lg:top-20 " />
       <div className="hidden lg:flex justify-between gap-7 ">
         <h3 className="3xl:text-[80px]  text-6xl 3xl:pl-32 3xl:pt-10 pt-6 pl-16 font-bold text-white flex-1 block">
@@ -33,20 +31,19 @@ const MainPageThree = () => {
             recording Georgia's literary and historical treasures, the Mkhedruli
             dance ensemble captures the essence of the nation's cultural spirit
             through movement.
-            <button
-              type="button"
-              className="border-white border-[1px] p-2 text-xs 3xl:text-sm  tracking-widest flex items-center  hover:bg-[#323232] duration-100 w-fit mt-2 gap-1 w-ful\
+            <Link
+              className="border-white border-[1px] p-2 text-xs 3xl:text-sm  tracking-widest flex items-center  hover:bg-[#323232] duration-100 w-fit mt-2 gap-1  z-20
               "
+              href={"TheTradition"}
             >
-
               Read More
               <ReadMoreArrow className="" />
-            </button>
+            </Link>
           </p>
         </div>
       </div>
 
-      <ReadMore />
+      <ReadMore href={"TheTradition"} />
     </section>
   );
 };

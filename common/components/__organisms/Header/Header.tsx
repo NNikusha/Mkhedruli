@@ -1,14 +1,15 @@
 "use client";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-// import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import BurgerBtn from "../../__atoms/BurgerBtn/BurgerBtn";
 import { useGlobalContext } from "../../../store/store";
 
 const Header = () => {
   const { burgerMenuOpen, setBurgerMenuOpen } = useGlobalContext();
+  const pathName = usePathname();
   const router = useRouter();
   return (
     <>
@@ -26,39 +27,45 @@ const Header = () => {
         />
         <div className=" gap-[2vw] text-[#FFFFFF66] hidden lg:flex">
           <Link
-            className="hover:text-white duration-100 cursor-pointer"
-            to="theShow"
-            spy={true}
-            smooth={true}
-            offset={-60}
-            duration={500}
+            href="TheTradition"
+            className={`hover:text-white ${
+              pathName === "/TheTradition" && "text-white"
+            } duration-100 cursor-pointer`}
+          >
+            HISTORY
+          </Link>
+          <Link
+            href="TourDates"
+            className={`hover:text-white ${
+              pathName === "/TourDates" && "text-white"
+            } duration-100 cursor-pointer`}
+          >
+            TOUR DATES
+          </Link>
+          <Link
+            href="Media"
+            className={`hover:text-white ${
+              pathName === "/Media" && "text-white"
+            } duration-100 cursor-pointer`}
+          >
+            MEDIA
+          </Link>
+          <Link
+            className={`hover:text-white ${
+              pathName === "/TheShow" && "text-white"
+            } duration-100 cursor-pointer`}
+            href="TheShow"
           >
             THE SHOW
           </Link>
-          <a
-            href="TheTradition"
-            className="hover:text-white duration-100 cursor-pointer"
-          >
-            THE TRADITION
-          </a>
-          <a
-            href="TourDates"
-            className="hover:text-white duration-100 cursor-pointer"
-          >
-            TOUR DATES
-          </a>
-          <a
-            href="Media"
-            className="hover:text-white duration-100 cursor-pointer"
-          >
-            MEDIA
-          </a>
-          <a
+          <Link
             href="Gallery"
-            className="hover:text-white duration-100 cursor-pointer"
+            className={`hover:text-white ${
+              pathName === "/Gallery" && "text-white"
+            } duration-100 cursor-pointer`}
           >
             GALLERY
-          </a>
+          </Link>
         </div>
         <p className="hidden lg:block">EN</p>
         <BurgerBtn isOpen={burgerMenuOpen} setIsOpen={setBurgerMenuOpen} />
@@ -69,43 +76,50 @@ const Header = () => {
         >
           <div className=" text-[#FFFFFF66] text-2xl font-semibold  flex flex-col gap-6 pb-20">
             <Link
-              className="hover:text-white duration-100 cursor-pointer text-center"
-              to="theShow"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={500}
+              href="TheTradition"
+              className={`hover:text-white ${
+                pathName === "/TheTradition" && "text-white"
+              } duration-100 cursor-pointer`}
+              onClick={() => setBurgerMenuOpen(false)}
+            >
+              THE TRADITION
+            </Link>
+            <Link
+              href="TourDates"
+              className={`hover:text-white ${
+                pathName === "/TourDates" && "text-white"
+              } duration-100 cursor-pointer`}
+              onClick={() => setBurgerMenuOpen(false)}
+            >
+              TOUR DATES
+            </Link>
+            <Link
+              href="Media"
+              className={`hover:text-white ${
+                pathName === "/Media" && "text-white"
+              } duration-100 cursor-pointer`}
+              onClick={() => setBurgerMenuOpen(false)}
+            >
+              MEDIA
+            </Link>
+            <Link
+              className={`hover:text-white ${
+                pathName === "/TheShow" && "text-white"
+              } duration-100 cursor-pointer`}
+              href="theShow"
               onClick={() => setBurgerMenuOpen(false)}
             >
               THE SHOW
             </Link>
-            <a
-              href="TheTradition"
-              className="hover:text-white duration-100 cursor-pointer"
-            >
-              THE TRADITION
-            </a>
-            <a
-              href="TourDates"
-              className="hover:text-white duration-100 cursor-pointer text-center"
-              onClick={() => setBurgerMenuOpen(false)}
-            >
-              TOUR DATES
-            </a>
-            <a
-              href="Media"
-              className="hover:text-white duration-100 cursor-pointer text-center"
-              onClick={() => setBurgerMenuOpen(false)}
-            >
-              MEDIA
-            </a>
-            <a
+            <Link
               href="Gallery"
-              className="hover:text-white duration-100 cursor-pointer text-center"
+              className={`hover:text-white ${
+                pathName === "/Gallery" && "text-white"
+              } duration-100 cursor-pointer`}
               onClick={() => setBurgerMenuOpen(false)}
             >
               GALLERY
-            </a>
+            </Link>
           </div>
         </div>
       </header>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ReadMoreArrow from "../../../../public/icons/ReadMoreArrow";
+import Link from "next/link";
 
 interface SwiperComponentProps {
   title: string;
@@ -27,13 +28,14 @@ const SwiperComponent = ({
           }`}
         >
           {title}
-          <button
+          <Link
             type="button"
             className="border-white border-[1px] p-2 text-xs 3xl:text-sm  tracking-widest flex items-center  hover:bg-[#323232] duration-100 w-fit mt-2 gap-1"
+            href={"TheShow"}
           >
             Read More
             <ReadMoreArrow className="" />
-          </button>
+          </Link>
         </p>
       </div>
     </article>

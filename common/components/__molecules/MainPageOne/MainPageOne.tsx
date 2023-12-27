@@ -17,7 +17,9 @@ const MainPageOne = () => {
           <GoldLine className="3xl:w-[4px] 3xl:h-[263px] w-[3px] h-[160px] hidden lg:flex" />
           <div className="  font-medium flex-col 3xl:gap-10 gap-8 hidden lg:flex">
             <p className="tracking-wider">STATE SONG AND</p>
-            <p className="tracking-wider gradient-text ">DANCE</p>
+            <p className="tracking-wider gradient-text 3xl:text-8xl lg:text-7xl text-5xl">
+              DANCE
+            </p>
             <p className="tracking-wider">ENSEMBLE</p>
           </div>
           <div className="flex flex-col 3xl:gap-10 gap-8 text-white  lg:hidden mt-32 text-center">
@@ -29,7 +31,7 @@ const MainPageOne = () => {
         </div>
         <div className="flex  justify-between flex-col lg:flex-row lg:w-full w-fit items-center h-full lg:h-auto">
           <Link
-            className="hover:text-white duration-100 cursor-pointer"
+            className="hover:text-white duration-100 cursor-pointer animate-bounce"
             to="theTradition"
             spy={true}
             smooth={true}

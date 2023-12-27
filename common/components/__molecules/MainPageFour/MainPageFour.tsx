@@ -27,6 +27,12 @@ const persons = [
     position: "Director",
     image: "/images/manImage.png",
   },
+  {
+    firstname: "Aleksandre",
+    lastname: "Chankvetadze",
+    position: "Director",
+    image: "/images/manImage.png",
+  },
 ];
 
 const MainPageFour = () => {
@@ -36,8 +42,8 @@ const MainPageFour = () => {
         <h3>THE</h3>
         <h3>PRODUCTION</h3>
       </div>
-      <div className="w-full overflow-x-scroll lg:overflow-x-visible z-10 pb-5 scrollbar scrollbar-thumb-[#D9D9D9] scrollbar-h-[5px] scrollbar-thumb-rounded-[20px]">
-        <div className="3xl:h-[580px] h-[400px] w-[1200px] flex 3xl:gap-5 lg:gap-2 xl:justify-end lg:justify-center justify-evenly lg:w-full 3xl:pr-24 xl:pr-16 z-20">
+      <div className="w-full overflow-x-scroll lg:overflow-visible  z-10 pb-5 scrollbar scrollbar-thumb-[#D9D9D9] scrollbar-h-[5px] scrollbar-thumb-rounded-[20px]">
+        <div className="3xl:h-[580px] h-[400px] w-[1500px] flex 3xl:gap-5 lg:gap-2 xl:justify-end lg:justify-center justify-evenly lg:w-full 3xl:pr-24 xl:pr-6 z-20">
           {persons.map((person, index) => (
             <MainPageFourPerson
               key={index}

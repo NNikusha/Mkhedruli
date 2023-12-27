@@ -56,15 +56,15 @@ const GrapeOrnament = ({ className }: IconProps) => {
           y2="647.856"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0AF6D" />
-          <stop offset="0.0222063" stop-color="#E2B46F" />
-          <stop offset="0.0909742" stop-color="#E4B871" />
-          <stop offset="0.1404" stop-color="#EAC678" />
-          <stop offset="0.2067" stop-color="#F0D680" />
-          <stop offset="0.48" stop-color="#D5BF72" />
-          <stop offset="0.8107" stop-color="#A58854" />
-          <stop offset="0.9311" stop-color="#85603F" />
-          <stop offset="1" stop-color="#8A6240" />
+          <stop stopColor="#E0AF6D" />
+          <stop offset="0.0222063" stopColor="#E2B46F" />
+          <stop offset="0.0909742" stopColor="#E4B871" />
+          <stop offset="0.1404" stopColor="#EAC678" />
+          <stop offset="0.2067" stopColor="#F0D680" />
+          <stop offset="0.48" stopColor="#D5BF72" />
+          <stop offset="0.8107" stopColor="#A58854" />
+          <stop offset="0.9311" stopColor="#85603F" />
+          <stop offset="1" stopColor="#8A6240" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_205_2596"
@@ -74,15 +74,15 @@ const GrapeOrnament = ({ className }: IconProps) => {
           y2="505.877"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0AF6D" />
-          <stop offset="0.0222063" stop-color="#E2B46F" />
-          <stop offset="0.0909742" stop-color="#E4B871" />
-          <stop offset="0.1404" stop-color="#EAC678" />
-          <stop offset="0.2067" stop-color="#F0D680" />
-          <stop offset="0.48" stop-color="#D5BF72" />
-          <stop offset="0.8107" stop-color="#A58854" />
-          <stop offset="0.9311" stop-color="#85603F" />
-          <stop offset="1" stop-color="#8A6240" />
+          <stop stopColor="#E0AF6D" />
+          <stop offset="0.0222063" stopColor="#E2B46F" />
+          <stop offset="0.0909742" stopColor="#E4B871" />
+          <stop offset="0.1404" stopColor="#EAC678" />
+          <stop offset="0.2067" stopColor="#F0D680" />
+          <stop offset="0.48" stopColor="#D5BF72" />
+          <stop offset="0.8107" stopColor="#A58854" />
+          <stop offset="0.9311" stopColor="#85603F" />
+          <stop offset="1" stopColor="#8A6240" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_205_2596"
@@ -92,15 +92,15 @@ const GrapeOrnament = ({ className }: IconProps) => {
           y2="723.934"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0AF6D" />
-          <stop offset="0.0222063" stop-color="#E2B46F" />
-          <stop offset="0.0909742" stop-color="#E4B871" />
-          <stop offset="0.1404" stop-color="#EAC678" />
-          <stop offset="0.2067" stop-color="#F0D680" />
-          <stop offset="0.48" stop-color="#D5BF72" />
-          <stop offset="0.8107" stop-color="#A58854" />
-          <stop offset="0.9311" stop-color="#85603F" />
-          <stop offset="1" stop-color="#8A6240" />
+          <stop stopColor="#E0AF6D" />
+          <stop offset="0.0222063" stopColor="#E2B46F" />
+          <stop offset="0.0909742" stopColor="#E4B871" />
+          <stop offset="0.1404" stopColor="#EAC678" />
+          <stop offset="0.2067" stopColor="#F0D680" />
+          <stop offset="0.48" stopColor="#D5BF72" />
+          <stop offset="0.8107" stopColor="#A58854" />
+          <stop offset="0.9311" stopColor="#85603F" />
+          <stop offset="1" stopColor="#8A6240" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_205_2596"
@@ -110,15 +110,15 @@ const GrapeOrnament = ({ className }: IconProps) => {
           y2="720.172"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0AF6D" />
-          <stop offset="0.0222063" stop-color="#E2B46F" />
-          <stop offset="0.0909742" stop-color="#E4B871" />
-          <stop offset="0.1404" stop-color="#EAC678" />
-          <stop offset="0.2067" stop-color="#F0D680" />
-          <stop offset="0.48" stop-color="#D5BF72" />
-          <stop offset="0.8107" stop-color="#A58854" />
-          <stop offset="0.9311" stop-color="#85603F" />
-          <stop offset="1" stop-color="#8A6240" />
+          <stop stopColor="#E0AF6D" />
+          <stop offset="0.0222063" stopColor="#E2B46F" />
+          <stop offset="0.0909742" stopColor="#E4B871" />
+          <stop offset="0.1404" stopColor="#EAC678" />
+          <stop offset="0.2067" stopColor="#F0D680" />
+          <stop offset="0.48" stopColor="#D5BF72" />
+          <stop offset="0.8107" stopColor="#A58854" />
+          <stop offset="0.9311" stopColor="#85603F" />
+          <stop offset="1" stopColor="#8A6240" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_205_2596"
@@ -128,15 +128,15 @@ const GrapeOrnament = ({ className }: IconProps) => {
           y2="591.837"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0AF6D" />
-          <stop offset="0.0222063" stop-color="#E2B46F" />
-          <stop offset="0.0909742" stop-color="#E4B871" />
-          <stop offset="0.1404" stop-color="#EAC678" />
-          <stop offset="0.2067" stop-color="#F0D680" />
-          <stop offset="0.48" stop-color="#D5BF72" />
-          <stop offset="0.8107" stop-color="#A58854" />
-          <stop offset="0.9311" stop-color="#85603F" />
-          <stop offset="1" stop-color="#8A6240" />
+          <stop stopColor="#E0AF6D" />
+          <stop offset="0.0222063" stopColor="#E2B46F" />
+          <stop offset="0.0909742" stopColor="#E4B871" />
+          <stop offset="0.1404" stopColor="#EAC678" />
+          <stop offset="0.2067" stopColor="#F0D680" />
+          <stop offset="0.48" stopColor="#D5BF72" />
+          <stop offset="0.8107" stopColor="#A58854" />
+          <stop offset="0.9311" stopColor="#85603F" />
+          <stop offset="1" stopColor="#8A6240" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_205_2596"
@@ -146,15 +146,15 @@ const GrapeOrnament = ({ className }: IconProps) => {
           y2="718.462"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0AF6D" />
-          <stop offset="0.0222063" stop-color="#E2B46F" />
-          <stop offset="0.0909742" stop-color="#E4B871" />
-          <stop offset="0.1404" stop-color="#EAC678" />
-          <stop offset="0.2067" stop-color="#F0D680" />
-          <stop offset="0.48" stop-color="#D5BF72" />
-          <stop offset="0.8107" stop-color="#A58854" />
-          <stop offset="0.9311" stop-color="#85603F" />
-          <stop offset="1" stop-color="#8A6240" />
+          <stop stopColor="#E0AF6D" />
+          <stop offset="0.0222063" stopColor="#E2B46F" />
+          <stop offset="0.0909742" stopColor="#E4B871" />
+          <stop offset="0.1404" stopColor="#EAC678" />
+          <stop offset="0.2067" stopColor="#F0D680" />
+          <stop offset="0.48" stopColor="#D5BF72" />
+          <stop offset="0.8107" stopColor="#A58854" />
+          <stop offset="0.9311" stopColor="#85603F" />
+          <stop offset="1" stopColor="#8A6240" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_205_2596"
@@ -164,15 +164,15 @@ const GrapeOrnament = ({ className }: IconProps) => {
           y2="618.129"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0AF6D" />
-          <stop offset="0.0222063" stop-color="#E2B46F" />
-          <stop offset="0.0909742" stop-color="#E4B871" />
-          <stop offset="0.1404" stop-color="#EAC678" />
-          <stop offset="0.2067" stop-color="#F0D680" />
-          <stop offset="0.48" stop-color="#D5BF72" />
-          <stop offset="0.8107" stop-color="#A58854" />
-          <stop offset="0.9311" stop-color="#85603F" />
-          <stop offset="1" stop-color="#8A6240" />
+          <stop stopColor="#E0AF6D" />
+          <stop offset="0.0222063" stopColor="#E2B46F" />
+          <stop offset="0.0909742" stopColor="#E4B871" />
+          <stop offset="0.1404" stopColor="#EAC678" />
+          <stop offset="0.2067" stopColor="#F0D680" />
+          <stop offset="0.48" stopColor="#D5BF72" />
+          <stop offset="0.8107" stopColor="#A58854" />
+          <stop offset="0.9311" stopColor="#85603F" />
+          <stop offset="1" stopColor="#8A6240" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_205_2596"
@@ -182,15 +182,15 @@ const GrapeOrnament = ({ className }: IconProps) => {
           y2="496.758"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0AF6D" />
-          <stop offset="0.0222063" stop-color="#E2B46F" />
-          <stop offset="0.0909742" stop-color="#E4B871" />
-          <stop offset="0.1404" stop-color="#EAC678" />
-          <stop offset="0.2067" stop-color="#F0D680" />
-          <stop offset="0.48" stop-color="#D5BF72" />
-          <stop offset="0.8107" stop-color="#A58854" />
-          <stop offset="0.9311" stop-color="#85603F" />
-          <stop offset="1" stop-color="#8A6240" />
+          <stop stopColor="#E0AF6D" />
+          <stop offset="0.0222063" stopColor="#E2B46F" />
+          <stop offset="0.0909742" stopColor="#E4B871" />
+          <stop offset="0.1404" stopColor="#EAC678" />
+          <stop offset="0.2067" stopColor="#F0D680" />
+          <stop offset="0.48" stopColor="#D5BF72" />
+          <stop offset="0.8107" stopColor="#A58854" />
+          <stop offset="0.9311" stopColor="#85603F" />
+          <stop offset="1" stopColor="#8A6240" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_205_2596"
@@ -200,15 +200,15 @@ const GrapeOrnament = ({ className }: IconProps) => {
           y2="656.676"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0AF6D" />
-          <stop offset="0.0222063" stop-color="#E2B46F" />
-          <stop offset="0.0909742" stop-color="#E4B871" />
-          <stop offset="0.1404" stop-color="#EAC678" />
-          <stop offset="0.2067" stop-color="#F0D680" />
-          <stop offset="0.48" stop-color="#D5BF72" />
-          <stop offset="0.8107" stop-color="#A58854" />
-          <stop offset="0.9311" stop-color="#85603F" />
-          <stop offset="1" stop-color="#8A6240" />
+          <stop stopColor="#E0AF6D" />
+          <stop offset="0.0222063" stopColor="#E2B46F" />
+          <stop offset="0.0909742" stopColor="#E4B871" />
+          <stop offset="0.1404" stopColor="#EAC678" />
+          <stop offset="0.2067" stopColor="#F0D680" />
+          <stop offset="0.48" stopColor="#D5BF72" />
+          <stop offset="0.8107" stopColor="#A58854" />
+          <stop offset="0.9311" stopColor="#85603F" />
+          <stop offset="1" stopColor="#8A6240" />
         </linearGradient>
       </defs>
     </svg>

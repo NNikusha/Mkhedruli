@@ -12,7 +12,7 @@
     -webkit-filter: grayscale(0%);
 }
 
-.gradient-text {
+.gradient-text-tour-dates {
     background: linear-gradient(183deg, #FDE497 20.49%, #E3A455 36.41%, #8F653B 54.16%, #BA7F3B 62.8%, #EEBC70 74.17%);
     background-clip: text;
     -webkit-background-clip: text;
