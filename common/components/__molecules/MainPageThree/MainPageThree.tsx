@@ -38,6 +38,7 @@ const MainPageThree = () => {
               className="border-white border-[1px] p-2 text-xs 3xl:text-sm  tracking-widest flex items-center  hover:bg-[#323232] duration-100 w-fit mt-2 gap-1 w-ful\
               "
             >
+
               Read More
               <ReadMoreArrow className="" />
             </button>

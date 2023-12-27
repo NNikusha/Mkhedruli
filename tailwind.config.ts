@@ -1,6 +1,10 @@
 import type { Config } from 'tailwindcss'
 
+
+
 const config: Config = {
+
+  
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './common/components/**/*.{js,ts,jsx,tsx,mdx}',

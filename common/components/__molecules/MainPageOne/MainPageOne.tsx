@@ -15,15 +15,15 @@ const MainPageOne = () => {
       <div className="w-full h-full flex flex-col justify-center px-[110px] 3xl:pb-[100px] pb-[50px] bg-black bg-opacity-60 items-center lg:items-start gap-[70px] lg:gap-0">
         <div className="text-white 3xl:text-8xl lg:text-7xl text-5xl items-center gap-[74px] flex-1 flex ">
           <GoldLine className="3xl:w-[4px] 3xl:h-[263px] w-[3px] h-[160px] hidden lg:flex" />
-          <div className=" flex-col 3xl:gap-10 gap-8 hidden lg:flex">
+          <div className="  font-medium flex-col 3xl:gap-10 gap-8 hidden lg:flex">
             <p className="tracking-wider">STATE SONG AND</p>
-            <p className="tracking-wider">DANCE</p>
+            <p className="tracking-wider gradient-text ">DANCE</p>
             <p className="tracking-wider">ENSEMBLE</p>
           </div>
-          <div className="flex flex-col 3xl:gap-10 gap-8 text-white lg:hidden mt-32 text-center">
+          <div className="flex flex-col 3xl:gap-10 gap-8 text-white  lg:hidden mt-32 text-center">
             <p className="tracking-wider">STATE </p>
             <p className="tracking-wider"> SONG AND</p>
-            <p className="tracking-wider">DANCE</p>
+            <p className="tracking-wider gradient-text ">DANCE</p>
             <p className="tracking-wider">ENSEMBLE</p>
           </div>
         </div>

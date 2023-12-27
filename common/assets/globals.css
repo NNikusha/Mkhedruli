@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background:#161616;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FDE497;
+  border-radius: 10px;
+}
+
+.gradient-text {
+  background: linear-gradient(183deg, #FDE497 20.49%, #E3A455 36.41%, #8F653B 54.16%, #BA7F3B 62.8%, #EEBC70 74.17%);
+  color: transparent; /* This makes the text color transparent so the background shows through */
+  display: inline-block; /* This is necessary for the gradient to apply to the text */
+}
+
 .custom-gradient {
     background: linear-gradient(270deg, rgba(253, 228, 151, 0.00) 0%, rgba(186, 127, 59, 0.53) 52.23%, rgba(253, 228, 151, 0.00) 99.99%), linear-gradient(183deg, #FDE497 20.49%, #EEBC70 74.17%);
   }
