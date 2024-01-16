@@ -3,12 +3,14 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import React, { useState } from "react";
-// import { Link } from "react-scroll";
 import BurgerBtn from "../../__atoms/BurgerBtn/BurgerBtn";
 import { useGlobalContext } from "../../../store/store";
+import LangSwitcher from "../../__molecules/LangSwitcher/LangSwitcher";
+import { TEXTS } from "../../../locales/languages";
 
 const Header = () => {
   const { burgerMenuOpen, setBurgerMenuOpen } = useGlobalContext();
+  const { language } = useGlobalContext();
   const pathName = usePathname();
   const router = useRouter();
   return (
@@ -32,7 +34,7 @@ const Header = () => {
               pathName === "/TheTradition" && "text-white"
             } duration-100 cursor-pointer`}
           >
-            HISTORY
+            {TEXTS[language].header?.HISTORY}
           </Link>
           <Link
             href="TourDates"
@@ -40,7 +42,7 @@ const Header = () => {
               pathName === "/TourDates" && "text-white"
             } duration-100 cursor-pointer`}
           >
-            TOUR DATES
+            {TEXTS[language].header?.TOURDATES}
           </Link>
           <Link
             href="Media"
@@ -48,7 +50,7 @@ const Header = () => {
               pathName === "/Media" && "text-white"
             } duration-100 cursor-pointer`}
           >
-            MEDIA
+            {TEXTS[language].header?.MEDIA}
           </Link>
           <Link
             className={`hover:text-white ${
@@ -56,7 +58,7 @@ const Header = () => {
             } duration-100 cursor-pointer`}
             href="TheShow"
           >
-            THE SHOW
+            {TEXTS[language].header?.THESHOW}
           </Link>
           <Link
             href="Gallery"
@@ -64,11 +66,13 @@ const Header = () => {
               pathName === "/Gallery" && "text-white"
             } duration-100 cursor-pointer`}
           >
-            GALLERY
+            {TEXTS[language].header?.GALLERY}
           </Link>
         </div>
-        <p className="hidden lg:block">EN</p>
-        <BurgerBtn isOpen={burgerMenuOpen} setIsOpen={setBurgerMenuOpen} />
+        <div className="flex gap-10">
+          <LangSwitcher />
+          <BurgerBtn isOpen={burgerMenuOpen} setIsOpen={setBurgerMenuOpen} />
+        </div>
         <div
           className={`w-full h-screen absolute left-0 bg-[#161616] duration-1000 z-20 flex items-center justify-center ${
             burgerMenuOpen ? "top-0" : "top-[-1500px]"
@@ -82,7 +86,7 @@ const Header = () => {
               } duration-100 cursor-pointer`}
               onClick={() => setBurgerMenuOpen(false)}
             >
-              THE TRADITION
+              {TEXTS[language].header?.HISTORY}
             </Link>
             <Link
               href="TourDates"
@@ -91,7 +95,7 @@ const Header = () => {
               } duration-100 cursor-pointer`}
               onClick={() => setBurgerMenuOpen(false)}
             >
-              TOUR DATES
+              {TEXTS[language].header?.TOURDATES}
             </Link>
             <Link
               href="Media"
@@ -100,7 +104,7 @@ const Header = () => {
               } duration-100 cursor-pointer`}
               onClick={() => setBurgerMenuOpen(false)}
             >
-              MEDIA
+              {TEXTS[language].header?.MEDIA}
             </Link>
             <Link
               className={`hover:text-white ${
@@ -109,7 +113,7 @@ const Header = () => {
               href="theShow"
               onClick={() => setBurgerMenuOpen(false)}
             >
-              THE SHOW
+              {TEXTS[language].header?.THESHOW}
             </Link>
             <Link
               href="Gallery"
@@ -118,7 +122,7 @@ const Header = () => {
               } duration-100 cursor-pointer`}
               onClick={() => setBurgerMenuOpen(false)}
             >
-              GALLERY
+              {TEXTS[language].header?.GALLERY}
             </Link>
           </div>
         </div>

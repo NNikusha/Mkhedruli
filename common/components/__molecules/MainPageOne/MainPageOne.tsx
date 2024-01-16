@@ -5,8 +5,10 @@ import GoDown from "../../../../public/icons/GoDown";
 import GoldLine from "../../__atoms/GoldLine/GoldLine";
 import { Link } from "react-scroll";
 import { useGlobalContext } from "../../../store/store";
+import { TEXTS } from "../../../locales/languages";
 
 const MainPageOne = () => {
+  const { language } = useGlobalContext();
   return (
     <section
       className="h-screen bg-mainPageOnebg bg-bottom bg-cover bg-no-repeat relative overflow-hidden"
@@ -16,17 +18,33 @@ const MainPageOne = () => {
         <div className="text-white 3xl:text-8xl lg:text-7xl text-5xl items-center gap-[74px] flex-1 flex ">
           <GoldLine className="3xl:w-[4px] 3xl:h-[263px] w-[3px] h-[160px] hidden lg:flex" />
           <div className="  font-medium flex-col 3xl:gap-10 gap-8 hidden lg:flex">
-            <p className="tracking-wider">STATE SONG AND</p>
-            <p className="tracking-wider gradient-text 3xl:text-8xl lg:text-7xl text-5xl">
-              DANCE
+            <p className="tracking-wider">
+              {TEXTS[language].mainPageOne?.STATE}{" "}
+              {TEXTS[language].mainPageOne?.SONGAND}
             </p>
-            <p className="tracking-wider">ENSEMBLE</p>
+            <p className="tracking-wider gradient-text 3xl:text-8xl lg:text-7xl text-5xl">
+              {TEXTS[language].mainPageOne?.DANCE}
+            </p>
+            <p className="tracking-wider">
+              {TEXTS[language].mainPageOne?.ENSEMBLE}
+            </p>
           </div>
           <div className="flex flex-col 3xl:gap-10 gap-8 text-white  lg:hidden mt-32 text-center">
-            <p className="tracking-wider">STATE </p>
-            <p className="tracking-wider"> SONG AND</p>
-            <p className="tracking-wider gradient-text ">DANCE</p>
-            <p className="tracking-wider">ENSEMBLE</p>
+            <p className="tracking-wider">
+              {TEXTS[language].mainPageOne?.STATE}{" "}
+            </p>
+            <p className="tracking-wider">
+              {" "}
+              {TEXTS[language].mainPageOne?.SONGAND}
+            </p>
+            <p className="tracking-wider gradient-text ">
+              {" "}
+              {TEXTS[language].mainPageOne?.DANCE}
+            </p>
+            <p className="tracking-wider">
+              {" "}
+              {TEXTS[language].mainPageOne?.ENSEMBLE}
+            </p>
           </div>
         </div>
         <div className="flex  justify-between flex-col lg:flex-row lg:w-full w-fit items-center h-full lg:h-auto">
@@ -52,7 +70,7 @@ const MainPageOne = () => {
               type="button"
               className="text-white 3xl:py-6 3xl:px-14 lg:px-12 lg:py-4 bg-yellow-300 rounded-full 3xl:text-3xl text-base shadow-md custom-gradient custom-border w-[190px] 3xl:w-[380px] lg:w-[260px] px-0 py-4 order-1 lg:order-2"
             >
-              Watch Now
+              {TEXTS[language].mainPageOne?.WATCHNOW}
             </button>
           </Link>
         </div>

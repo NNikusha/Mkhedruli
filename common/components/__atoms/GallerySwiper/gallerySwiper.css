@@ -1,0 +1,42 @@
+/* Styles for the active slide */
+
+/* Styles for all slides, including inactive ones */
+.slick-slide {
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /* Apply grayscale and reduce brightness for a dark-white effect */
+}
+
+.slick-center {
+    background-color: #f87171;
+    transform: translateY(-50px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    box-shadow: 0px 11px 28.9px 0px rgba(253, 228, 151, 0.26);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.slider {
+    height: 400px;
+    width: 50vw;
+}
+
+.slick-list {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+}
+
+.slick-track {
+    overflow: visible;
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        height: 400px;
+        width: 350px;
+    }
+}
+

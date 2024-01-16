@@ -3,33 +3,25 @@ import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
-import SwiperComponent from "./SwiperComponent";
-import "./mainPageFiveSwiper.css";
+import "./gallerySwiper.css";
 import SwiperButton from "../SwiperButtons/SwiperButton";
+import GallerySwiperComponent from "./GallerySwiperComponent";
 
 const SwiperData = [
   {
     image: "/images/mainPhoto.png",
-    title:
-      "Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
   },
   {
     image: "/images/manImage.png",
-    title:
-      "Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
   },
   {
     image: "/images/mainPhoto.png",
-    title:
-      "Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
   },
   {
     image: "/images/manImage.png",
-    title:
-      "Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
   },
 ];
-function MainPageFiveSwiper() {
+function GallerySwiper() {
   const middleIndex = Math.floor(SwiperData.length / 2);
   const [centerIndex, setCenterIndex] = useState(middleIndex);
 
@@ -64,15 +56,14 @@ function MainPageFiveSwiper() {
     <>
       <Slider {...settings} className="slider" ref={ref}>
         {SwiperData.map((assessment, i) => (
-          <SwiperComponent
+          <GallerySwiperComponent
             image={assessment.image}
-            title={assessment.title}
             key={i}
             isCenterActive={i === centerIndex}
           />
         ))}
       </Slider>
-      <div className="w-full flex lg:justify-end justify-center lg:pr-24 lg:mt-5 3xl:mt-24 mt-24 ">
+      <div className="w-full flex justify-center   3xl:mt-8 ">
         <SwiperButton
           handleNextSlide={handleNextSlide}
           handlePrevSlide={handlePrevSlide}
@@ -82,4 +73,4 @@ function MainPageFiveSwiper() {
   );
 }
 
-export default MainPageFiveSwiper;
+export default GallerySwiper;
