@@ -9,17 +9,14 @@ import GallerySwiperComponent from "./GallerySwiperComponent";
 
 const SwiperData = [
   {
-    image: "/images/mainPhoto.png",
+    image: "/images/gallery1.png",
   },
   {
-    image: "/images/manImage.png",
+    image: "/images/gallery3.png",
   },
   {
-    image: "/images/mainPhoto.png",
-  },
-  {
-    image: "/images/manImage.png",
-  },
+    image: "/images/gallery2.png",
+  },,
 ];
 function GallerySwiper() {
   const middleIndex = Math.floor(SwiperData.length / 2);

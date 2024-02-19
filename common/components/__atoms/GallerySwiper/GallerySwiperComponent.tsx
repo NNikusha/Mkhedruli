@@ -9,10 +9,10 @@ interface SwiperComponentProps {
 
 const GallerySwiperComponent = ({ image }: SwiperComponentProps) => {
   return (
-    <article className="3xl:h-[500px] h-[400px] transition-all duration-300 ease-in-out">
+    <article className="3xl:h-[500px]  h-[400px] transition-all  duration-700  ease-in-out ">
       <div
         style={{ backgroundImage: `url(${image})` }}
-        className={`w-full h-full bg-cover bg-center transition-all duration-300 ease-in-out`}
+        className={`w-full h-full bg-cover  rounded-xl bg-center transition-all duration-300 ease-in-out`}
       ></div>
     </article>
   );
