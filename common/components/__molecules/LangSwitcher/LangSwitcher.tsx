@@ -28,6 +28,7 @@ const LangSwitcher = () => {
           {languages.map(({ src, lang }) => {
             return (
               <LangSwitcherItem
+                key={lang}
                 src={src}
                 lang={lang}
                 setIsModalOpen={setIsModalOpen}

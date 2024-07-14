@@ -5,11 +5,11 @@ import TheShowThree from '../../common/components/__molecules/TheShowThree/TheSh
 
 const page = () => {
     return (
-        <>
+        <div className=" bg-mainPageThreebg bg-contain bg-[#161616]">
             <TheShowOne />
             <TheShowTwo />
             <TheShowThree />
-        </>
+        </div>
 
 
     )

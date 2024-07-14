@@ -1,5 +1,5 @@
 .Tour {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     /* filter: grayscale(100%); */
 }
 
@@ -17,19 +17,41 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-style: normal;
-
-    /* line-height: 0px;  */
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
+.Tour .bg-dancersPiramid {
+    transition: filter 0.3s ease;
+}
 
 .Tour:hover .bg-dancersPiramid {
     filter: grayscale(0%);
+}
+
+/* Disable hover effects on mobile devices and ensure elements are colorful */
+@media (max-width: 768px) {
+    .Tour:hover {
+        background-color: initial;
+        transform: none;
+        background: none;
+        box-shadow: none;
+        filter: none;
+        -webkit-filter: none;
+    }
+    .Tour .bg-dancersPiramid,
+    .Tour:hover .bg-dancersPiramid {
+        filter: none;
+        -webkit-filter: none;
+    }
+    .Tour {
+        filter: none;
+        -webkit-filter: none;
+    }
+
 }

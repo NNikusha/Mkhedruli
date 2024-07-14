@@ -3,8 +3,8 @@ import GoldLine from '../../__atoms/GoldLine/GoldLine'
 
 const Media = () => {
     return (
-        <section className="h-full bg-[#161616] ">
-            <div className=" px-[40px]  items-center  pt-[100px] flex-col    w-full h-full flex  bg-[#161616]">
+        <section className="h-full bg-mainPageThreebg bg-contain bg-[#161616] ">
+            <div className=" px-[40px]  items-center  pt-[100px] flex-col    w-full h-full flex ">
                 <div className="flex flex-col  py-8  items-center   text-center w-fit lg:items-start  ">
                     <h3 className=" text-[40px]  font-bold text-white flex-1">
                         MEDIA

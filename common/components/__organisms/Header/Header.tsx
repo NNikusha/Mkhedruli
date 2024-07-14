@@ -110,7 +110,7 @@ const Header = () => {
               className={`hover:text-white ${
                 pathName === "/TheShow" && "text-white"
               } duration-100 cursor-pointer`}
-              href="theShow"
+              href="TheShow"
               onClick={() => setBurgerMenuOpen(false)}
             >
               {TEXTS[language].header?.THESHOW}
