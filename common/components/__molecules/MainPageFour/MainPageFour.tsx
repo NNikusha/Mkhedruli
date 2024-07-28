@@ -7,7 +7,7 @@ const persons = [
     firstname: "Aleksandre",
     lastname: "Chankvetadze",
     position: "Director",
-    image: "/images/manImage.png",
+    image: "/images/gogi.jpg",
   },
   {
     firstname: "Aleksandre",

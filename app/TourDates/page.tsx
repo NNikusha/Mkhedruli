@@ -28,7 +28,7 @@ const MyComponent = () => {
                 key={index}
                 className="w-full relative h-[370px] bg-black transform Tour"
               >
-                <div className="flex bg-samaia h-full grayscale hover:grayscale-0 bg-bottom bg-cover bg-no-repeat flex-col justify-center items-center text-white pt-[280px]"></div>
+                <div className="flex bg-samaia h-full grayscale-0 sm:grayscale sm:hover:grayscale-0 bg-bottom bg-cover bg-no-repeat flex-col justify-center items-center text-white pt-[280px]"></div>
                 <div className="pb-[20px] max-w-[200px] absolute bottom-[5px] left-0 right-0 mx-auto text-shadow">
                   <div className="flex items-center justify-center gap-1 font-bold text-2xl uppercase">
                     <div className="text-white">
