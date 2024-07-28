@@ -27,7 +27,7 @@ export async function generateMetadata({
       description: "State song and dance ensemble - mkhedruli.ge",
       images: [
         {
-          url: "https://mkhedruli.ge",
+          url: "images/7.jpg",
           width: 800,
           height: 600,
           alt: "MKHEDRULI Ensemble Image",
