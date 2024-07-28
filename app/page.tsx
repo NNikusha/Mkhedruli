@@ -7,6 +7,7 @@ import MainPageFive from "../common/components/__molecules/MainPageFive/MainPage
 import RunningLine from "../common/components/__atoms/RunningLine/RunningLine";
 import MainPageSix from "../common/components/__molecules/MainPageSix/MainPageSix";
 import { Metadata } from "next";
+import Script from 'next/script';
 
 interface Props {
   params: {
@@ -35,13 +36,15 @@ export default function Home() {
     <>
       <MainPageOne />
       <MainPageTwoVideo />
-      <div className=" bg-mainPageThreebg bg-contain bg-[#161616]">
+      <div className="bg-mainPageThreebg bg-contain bg-[#161616]">
         <MainPageThree />
         <RunningLine />
-        <MainPageFour />
+        {/* <MainPageFour /> */}
         <MainPageFive />
         <MainPageSix />
       </div>
+      <div id="top-ge-counter-container" data-site-id="117516"></div>
+      <Script src="//counter.top.ge/counter.js" strategy="afterInteractive" />
     </>
   );
 }
