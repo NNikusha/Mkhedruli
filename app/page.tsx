@@ -7,6 +7,7 @@ import MainPageFive from "../common/components/__molecules/MainPageFive/MainPage
 import RunningLine from "../common/components/__atoms/RunningLine/RunningLine";
 import MainPageSix from "../common/components/__molecules/MainPageSix/MainPageSix";
 import { Metadata } from "next";
+import Head from 'next/head';
 import Script from 'next/script';
 
 interface Props {
@@ -22,8 +23,17 @@ export async function generateMetadata({
     title: "MKHEDRULI",
     description: "State song and dance ensemble - mkhedruli.ge",
     openGraph: {
-      title: "mkhedruli",
-      description: "images/7.jpg",
+      title: "MKHEDRULI",
+      description: "State song and dance ensemble - mkhedruli.ge",
+      images: [
+        {
+          url: "https://mkhedruli.ge",
+          width: 800,
+          height: 600,
+          alt: "MKHEDRULI Ensemble Image",
+        },
+      ],
+      type: "website",
     },
     icons: {
       icon: "icons/logo.svg",
@@ -34,6 +44,9 @@ export async function generateMetadata({
 export default function Home() {
   return (
     <>
+      <Head>
+        <meta property="og:image" content="images/7.jpg" />
+      </Head>
       <MainPageOne />
       <MainPageTwoVideo />
       <div className="bg-mainPageThreebg bg-contain bg-[#161616]">
