@@ -1,6 +1,28 @@
 import React from "react";
 import GoldLine from "../../common/components/__atoms/GoldLine/GoldLine";
 import GallerySwiper from "../../common/components/__atoms/GallerySwiper/GallerySwiper";
+import { Metadata } from "next";
+
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
+  return {
+    title: "Gallery",
+    description: "State song and dance ensemble - mkhedruli",
+    openGraph: {
+      title: "mkhedruli",
+      description: "State song and dance ensemble - mkhedruli",
+    },
+    icons: {
+      icon: "icons/logo.svg",
+    },
+  };
+}
 
 const page = () => {
   return (
