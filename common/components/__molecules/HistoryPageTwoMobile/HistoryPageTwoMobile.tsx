@@ -4,19 +4,13 @@ import GrapeOrnament from "../../../../public/icons/GrapeOrnament";
 
 const HistoryPageTwoMobile = () => {
   return (
-    <div className=" bg-[#161616] bg-bottom bg-cover bg-no-repeat py-6">
-      <div className="w-full h-full flex  relative flex-col justify-center bg-[#161616] ">
-        <div className="flex flex-col  text-white justify-center  w-[100%] p-16 gap-6 items-end">
-          <div className="text-sm text-end font-light">
-            The name "Mkhedruli" drives from the script used in the Georgian
-            alphabet and is emblematic of Georgia's distinctive cultural
-            identity. Just as the Mkhedruli script has been instrumental in
-            recording Georgia's literary and historical treasures, the Mkhedruli
-            dance ensemble captures the essence of the nation's cultural spirit
-            through movement.{" "}
+    <div className="bg-[#161616] bg-bottom bg-cover bg-no-repeat py-6">
+      <div className="w-full h-full flex relative flex-col justify-center bg-[#161616]">
+        <div className="flex flex-col text-white justify-center w-full p-6 gap-6 items-end">
+          <div className="text-sm text-end font-light px-4">
+            The name "Mkhedruli" holds deep significance in Georgian culture. Derived from the Georgian word for "warrior" or "knight," it embodies the valor, strength, and pride of our nation's history. It is also the name of a traditional Georgian folk dance that reflects these qualities through powerful and graceful movements. Our ensemble chose this name to reflect the spirit of bravery and resilience that defines Georgian dance and music, honoring our ancestors and inspiring future generations.
           </div>
-        
-          <GoldLine className="w-[85%] h-[2px]  " />
+          <GoldLine className="w-[85%] h-1" />
         </div>
       </div>
     </div>

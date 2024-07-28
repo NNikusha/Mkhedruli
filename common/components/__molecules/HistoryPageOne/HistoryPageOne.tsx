@@ -22,10 +22,7 @@ const HistoryPageOne = () => {
               mission
             </div>
             <div className="w-[700px] h-[200px] 3xl:text-2xl text-xl font-normal leading-7 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
+            At Mkhedruli Ensemble, our mission is to preserve and promote the rich cultural heritage of Georgia through captivating dance and music performances. We aim to inspire audiences worldwide by showcasing the beauty, history, and spirit of Georgian traditions. Through our art, we strive to foster cultural understanding and pride.
             </div>
           </div>
         </div>

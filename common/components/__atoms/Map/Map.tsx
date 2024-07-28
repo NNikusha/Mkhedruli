@@ -1,40 +1,23 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { Loader } from "@googlemaps/js-api-loader";
+import React from "react";
 
 const Map = () => {
-  const mapRef = React.useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const initMap = async () => {
-      const loader = new Loader({
-        apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
-        version: "weekly",
-      });
-
-      const { Map } = await loader.importLibrary("maps");
-
-      const position = {
-        lat: 43.64,
-        lng: -79.38,
-      };
-
-      const mapOptions: google.maps.MapOptions = {
-        center: position,
-        zoom: 17,
-        mapId: "MY_NEXTJS_MAPID",
-      };
-
-      const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
-    };
-    initMap();
-  }, []);
   return (
     <div
       className="lg:w-[65%] w-[90%] lg:h-[90%] h-[200px] 3xl:rounded-[60px] lg:rounded-[50px] rounded-[20px] 3xl:right-36 lg:right-32 bottom-20 lg:bottom-0"
-      ref={mapRef}
-    ></div>
+      style={{ position: 'relative' }}
+    >
+      <iframe
+        className="grayscale hover:grayscale-0 transition-filter duration-300"
+        width="100%"
+        height="100%"
+        style={{ border: 0, borderRadius: "inherit", position: 'absolute', top: 0, left: 0 }}
+        loading="lazy"
+        allowFullScreen
+        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyDQpNjnf9FYYKXVK_vJnqcv9Xceme7ewDc&q=41.8204404,41.7756632&zoom=17&maptype=satellite`}
+      ></iframe>
+    </div>
   );
 };
 

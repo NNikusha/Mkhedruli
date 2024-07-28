@@ -1,7 +1,5 @@
 import type { Config } from 'tailwindcss'
 
-
-
 const config: Config = {
 
   
@@ -22,7 +20,8 @@ const config: Config = {
         dancersPiramid:"url('/images/dancersPiramid.png')",
         historyPhoto :"url('/images/historyPhoto.png')",
         mkhedruliDancers :"url('/images/mkhedruliDancers.png')",
-        musicians:"url('/images/musicians.png')"
+        musicians:"url('/images/musicians.png')",
+        samaia:"url('/images/samaia.jpg')"
 
       },
       screens: {

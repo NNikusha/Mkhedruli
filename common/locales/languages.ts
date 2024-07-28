@@ -20,7 +20,7 @@ export const TEXTS = {
         mainPageThree : {
             OUR : "OUR",
             HISTORY : "HISTORY",
-            CONTENTFIRST : "The name 'Mkhedruli' derives from the script used in the Georgian alphabet and is emblematic of Georgia's distinctive cultural identity. Just as the Mkhedruli script has been instrumental in recording Georgia's literary and historical treasures, the Mkhedruli dance ensemble captures the essence of the nation's cultural spirit through movement. The name 'Mkhedruli' derives",
+            CONTENTFIRST : "Mkhedruli Ensemble, founded in 2004 in Adjara, Georgia, began as a small children's dance group. It has grown into a renowned ensemble, performing internationally. Notable achievements include a successful tour in China in 2016 and various acclaimed performances across Europe, showcasing the rich cultural heritage of Georgia.",
             CONTENTSECOND : "from the script used in the Georgian alphabet and is emblematic",
             READMORE : "Read More"
         }

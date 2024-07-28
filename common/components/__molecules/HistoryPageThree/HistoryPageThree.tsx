@@ -13,12 +13,7 @@ const HistoryPageThree = () => {
           <div className="flex ">
             <div className="  items-centerflex w-2/5 py-[120px] px-[60px] text-[#FFFF] leading-7  ">
               {" "}
-              <span className="text-4xl">T</span>he name "Mkhedruli" drives from
-              the script used in the Georgian alphabet and is emblematic of
-              Georgia's distinctive cultural identity. Just as the Mkhedruli
-              script has been instrumental in recording Georgia's literary and
-              historical treasures, the Mkhedruli dance ensemble captures the
-              essence of the nation's cultural spirit through movement.
+              <span className="text-4xl">M</span>Meet the talented dancers and singers of Mkhedruli Ensemble. Each performer brings a unique blend of passion, skill, and dedication to their craft, beautifully representing Georgian culture through their captivating performances. Their artistry and commitment to excellence ensure that every show is a vibrant and unforgettable experience, showcasing the rich traditions of Georgia.
             </div>
             <div className=" w-3/5 flex  flex-row  gap-4">
               <div className="  flex flex-1 h-[445px] bg-dancersPiramid bg-cover bg-no-repeat bg-bottom  grayscale"></div>

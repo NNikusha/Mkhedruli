@@ -1,3 +1,4 @@
+
 import React from "react";
 import GoldLine from "../../__atoms/GoldLine/GoldLine";
 import Map from "../../__atoms/Map/Map";
@@ -34,20 +35,21 @@ const MainPageSix = () => {
                 Address:
               </h6>
               <p className="w-full break-words text-white font-extralight text-xs 3xl:text-base text-center lg:text-start">
-                Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do
-                eiusmod tempor incididunt ut labore
+                Georgia,Kobuleti,Agmashenebeli Street N114
               </p>
             </div>
             <div className="lg:w-[80%]">
               <h6 className="text-[#FDE497] mb-2 3xl:text-xl text-base text-center lg:text-start">
                 Telephone number
               </h6>
-              <p className="w-full break-words text-white font-extralight text-xs 3xl:text-base text-center lg:text-start">
-                Lorem ispum dolor sit amet. consectetur adipisicing alit. sed do
-                eiusmod tempor incididunt ut labore
-              </p>
+              <div className="w-full break-words text-white font-extralight text-xs 3xl:text-base text-center lg:text-start">
+                <div>
+                  +995 595 700 212
+                </div>
+                <div>+995 568 101 135</div>
+              </div>
             </div>
-            <div className="lg:w-[80%] w-full">
+            {/* <div className="lg:w-[80%] w-full">
               <h6 className="text-[#FDE497] mb-2 3xl:text-xl text-base text-center lg:text-start">
                 Social medias
               </h6>
@@ -65,7 +67,7 @@ const MainPageSix = () => {
                   <YoutubeIcon className="" />
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>{" "}
       </div>
