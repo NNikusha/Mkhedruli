@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import MainPageOne from "../common/components/__molecules/MainPageOne/MainPageOne";
 import MainPageTwoVideo from "../common/components/__molecules/MainPageTwoVideo/MainPageTwoVideo";
@@ -7,7 +6,30 @@ import MainPageFour from "../common/components/__molecules/MainPageFour/MainPage
 import MainPageFive from "../common/components/__molecules/MainPageFive/MainPageFive";
 import RunningLine from "../common/components/__atoms/RunningLine/RunningLine";
 import MainPageSix from "../common/components/__molecules/MainPageSix/MainPageSix";
+import { Metadata } from "next";
 import Script from 'next/script';
+
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
+  return {
+    title: "MKHEDRULI",
+    description: "State song and dance ensemble - mkhedruli.ge",
+    openGraph: {
+      title: "mkhedruli",
+      description: "State song and dance ensemble - mkhedruli.ge",
+    },
+    icons: {
+      icon: "icons/logo.svg",
+    },
+  };
+}
 
 export default function Home() {
   return (

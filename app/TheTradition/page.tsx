@@ -5,6 +5,28 @@ import HistoryPageThree from "../../common/components/__molecules/HistoryPageThr
 import HistoryPageOneMobile from "../../common/components/__molecules/HistoryPageOneMobile/HistoryPageOneMobile";
 import HistoryPageTwoMobile from "../../common/components/__molecules/HistoryPageTwoMobile/HistoryPageTwoMobile";
 import HistoryPageThreeMobile from "../../common/components/__molecules/HistoryPageThreeMobile/HistoryPageThreeMobile";
+import { Metadata } from "next";
+
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
+  return {
+    title: "The Tradition",
+    description: "Mkhedruli - is unique dance ensemble",
+    openGraph: {
+      title: "mkhedruli",
+      description: "Mkhedruli - is unique dance ensemble",
+    },
+    icons: {
+      icon: "icons/logo.svg",
+    },
+  };
+}
 
 const page = () => {
   return (

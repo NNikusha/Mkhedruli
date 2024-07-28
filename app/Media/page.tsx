@@ -1,10 +1,32 @@
-import React from 'react'
-import Media from '../../common/components/__molecules/Media/media'
+import React from "react";
+import Media from "../../common/components/__molecules/Media/media";
+import { Metadata } from "next";
 
-const page = () => {
-  return (
-   <Media/>
-  )
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
+  return {
+    title: "Media",
+    description:
+      "Mkhedruli - Experience the Spirit of Georgia through traditional attire, intricate dances, and folk music.",
+    openGraph: {
+      title: "mkhedruli",
+      description:
+        "Mkhedruli - Experience the Spirit of Georgia through traditional attire, intricate dances, and folk music.",
+    },
+    icons: {
+      icon: "icons/logo.svg",
+    },
+  };
 }
 
-export default page
+const page = () => {
+  return <Media />;
+};
+
+export default page;

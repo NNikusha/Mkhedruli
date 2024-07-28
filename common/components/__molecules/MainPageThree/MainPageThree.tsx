@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ReadMore from "../../__atoms/ReadMore/ReadMore";
 import GoldOvalLine from "../../../../public/icons/GoldOvalLine";
@@ -23,9 +24,10 @@ const MainPageThree = () => {
           </p>
         </h3>
         <div
-      className="3xl:h-[550px] xl:h-[480px] h-[400px] 3xl:w-[1000px] lg:w-[800px] bg-cover bg-center z-10 filter grayscale hover:filter-none transition duration-300"
-      style={{ backgroundImage: "url('/images/beqa.jpg')" }}
-    ></div>      </div>
+          className="3xl:h-[550px] xl:h-[480px] h-[400px] 3xl:w-[1000px] lg:w-[800px] bg-cover bg-center z-10 filter grayscale hover:filter-none transition duration-300"
+          style={{ backgroundImage: "url('/images/beqa.jpg')" }}
+        ></div>{" "}
+      </div>
       <div className="flex flex-col mb-24 lg:hidden">
         <div className="3xl:text-[80px]  text-[40px]   font-bold text-white xl:flex-col   lg:hidden text-center mb-7">
           <h3> {TEXTS[language].mainPageThree?.OUR}</h3>
