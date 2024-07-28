@@ -11,6 +11,7 @@ export async function generateMetadata({
   params: { slug },
 }: Props): Promise<Metadata> {
   return {
+    metadataBase: new URL("https://www.mkhedruli.ge"),
     title: "Media",
     description:
       "Mkhedruli - Experience the Spirit of Georgia through traditional attire, intricate dances, and folk music.",

@@ -16,6 +16,7 @@ export async function generateMetadata({
   params: { slug },
 }: Props): Promise<Metadata> {
   return {
+    metadataBase: new URL("https://www.mkhedruli.ge"),
     title: "The Tradition",
     description: "Mkhedruli - is unique dance ensemble",
     openGraph: {
