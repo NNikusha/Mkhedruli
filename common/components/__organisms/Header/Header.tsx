@@ -70,7 +70,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex gap-10">
-          <LangSwitcher />
+          {/* <LangSwitcher /> */}
           <BurgerBtn isOpen={burgerMenuOpen} setIsOpen={setBurgerMenuOpen} />
         </div>
         <div
