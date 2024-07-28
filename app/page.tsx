@@ -23,7 +23,7 @@ export async function generateMetadata({
     description: "State song and dance ensemble - mkhedruli.ge",
     openGraph: {
       title: "mkhedruli",
-      description: "State song and dance ensemble - mkhedruli.ge",
+      description: "images/7.jpg",
     },
     icons: {
       icon: "icons/logo.svg",
