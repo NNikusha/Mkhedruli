@@ -29,7 +29,7 @@ const Header = () => {
         />
         <div className=" gap-[2vw] text-[#FFFFFF66] hidden lg:flex">
           <Link
-            href="TheTradition"
+            href="/TheTradition"
             className={`hover:text-white ${
               pathName === "/TheTradition" && "text-white"
             } duration-100 cursor-pointer`}
@@ -37,7 +37,7 @@ const Header = () => {
             {TEXTS[language].header?.HISTORY}
           </Link>
           <Link
-            href="TourDates"
+            href="/TourDates"
             className={`hover:text-white ${
               pathName === "/TourDates" && "text-white"
             } duration-100 cursor-pointer`}
@@ -45,7 +45,7 @@ const Header = () => {
             {TEXTS[language].header?.TOURDATES}
           </Link>
           <Link
-            href="Media"
+            href="/Media"
             className={`hover:text-white ${
               pathName === "/Media" && "text-white"
             } duration-100 cursor-pointer`}
@@ -56,12 +56,12 @@ const Header = () => {
             className={`hover:text-white ${
               pathName === "/TheShow" && "text-white"
             } duration-100 cursor-pointer`}
-            href="TheShow"
+            href="/TheShow"
           >
             {TEXTS[language].header?.THESHOW}
           </Link>
           <Link
-            href="Gallery"
+            href="/Gallery"
             className={`hover:text-white ${
               pathName === "/Gallery" && "text-white"
             } duration-100 cursor-pointer`}
@@ -80,7 +80,7 @@ const Header = () => {
         >
           <div className=" text-[#FFFFFF66] text-2xl font-semibold  flex flex-col gap-6 pb-20">
             <Link
-              href="TheTradition"
+              href="/TheTradition"
               className={`hover:text-white ${
                 pathName === "/TheTradition" && "text-white"
               } duration-100 cursor-pointer`}
@@ -89,7 +89,7 @@ const Header = () => {
               {TEXTS[language].header?.HISTORY}
             </Link>
             <Link
-              href="TourDates"
+              href="/TourDates"
               className={`hover:text-white ${
                 pathName === "/TourDates" && "text-white"
               } duration-100 cursor-pointer`}
@@ -98,7 +98,7 @@ const Header = () => {
               {TEXTS[language].header?.TOURDATES}
             </Link>
             <Link
-              href="Media"
+              href="/Media"
               className={`hover:text-white ${
                 pathName === "/Media" && "text-white"
               } duration-100 cursor-pointer`}
@@ -110,13 +110,13 @@ const Header = () => {
               className={`hover:text-white ${
                 pathName === "/TheShow" && "text-white"
               } duration-100 cursor-pointer`}
-              href="TheShow"
+              href="/TheShow"
               onClick={() => setBurgerMenuOpen(false)}
             >
               {TEXTS[language].header?.THESHOW}
             </Link>
             <Link
-              href="Gallery"
+              href="/Gallery"
               className={`hover:text-white ${
                 pathName === "/Gallery" && "text-white"
               } duration-100 cursor-pointer`}

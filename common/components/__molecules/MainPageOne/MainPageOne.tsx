@@ -55,6 +55,7 @@ const MainPageOne = () => {
             smooth={true}
             offset={-30}
             duration={500}
+            href=""
           >
             <GoDown className="3xl:w-[100px] 3xl:h-[100px] lg:w-[68px] lg:h-[68px] w-[74px] h-[74px] cursor-pointer order-2 lg:order-1" />
           </Link>
@@ -65,6 +66,7 @@ const MainPageOne = () => {
             smooth={true}
             offset={-30}
             duration={500}
+            href=""
           >
             <button
               type="button"
