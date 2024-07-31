@@ -1,4 +1,4 @@
-
+"use client"
 import React from "react";
 import GoldLine from "../../__atoms/GoldLine/GoldLine";
 import Map from "../../__atoms/Map/Map";
@@ -7,19 +7,22 @@ import TwitterIcon from "../../../../public/icons/TwitterIcon";
 import FacebookIcon from "../../../../public/icons/FacebookIcon";
 import YoutubeIcon from "../../../../public/icons/YoutubeIcon";
 import Link from "next/link";
+import { useGlobalContext } from "../../../store/store";
+import { TEXTS } from "../../../locales/languages";
 
 const MainPageSix = () => {
+  const { language } = useGlobalContext();
+
   return (
     <section
       className=" lg:h-[94vh] flex flex-col  pt-10  relative items-center  gap-32 lg:gap-0"
       id="theTradition"
     >
       <div
-        className="flex flex-col lg:flex-row justify-between lg:gap-20 gap-5 3xl:gap-44 3xl:pl-44  items-center lg:pl-20 text-center lg:text-start w-fit lg:w-full
-       "
+        className="flex flex-col lg:flex-row justify-between lg:gap-20 gap-5 3xl:gap-44 3xl:pl-44  items-center lg:pl-20 text-center lg:text-start w-fit lg:w-full"
       >
         <h3 className="3xl:text-[80px] lg:text-6xl text-[40px]  font-bold text-white flex-1">
-          CONTACT
+          {TEXTS[language].mainPageSix.CONTACT}
         </h3>
         <GoldLine className="w-full h-[2px] flex" />
       </div>
@@ -30,22 +33,20 @@ const MainPageSix = () => {
         >
           <Map />
           <div className="flex flex-col 3xl:gap-10 gap-4 justify-center lg:w-[40%] w-full items-center lg:items-start h-full p-6 pt-0 lg:p-0 relative bottom-10 lg:bottom-0">
-            <div className="lg:w-[80%]  ">
+            <div className="lg:w-[80%]">
               <h6 className="text-[#FDE497] mb-2 3xl:text-xl text-base text-center lg:text-start">
-                Address:
+                {TEXTS[language].mainPageSix.ADDRESS_LABEL}
               </h6>
               <p className="w-full break-words text-white font-extralight text-xs 3xl:text-base text-center lg:text-start">
-                Georgia,Kobuleti,Agmashenebeli Street N114
+                {TEXTS[language].mainPageSix.ADDRESS}
               </p>
             </div>
             <div className="lg:w-[80%]">
               <h6 className="text-[#FDE497] mb-2 3xl:text-xl text-base text-center lg:text-start">
-                Telephone number
+                {TEXTS[language].mainPageSix.PHONE_LABEL}
               </h6>
               <div className="w-full break-words text-white font-extralight text-xs 3xl:text-base text-center lg:text-start">
-                <div>
-                  +995 595 700 212
-                </div>
+                <div>+995 595 700 212</div>
                 <div>+995 568 101 135</div>
               </div>
             </div>
