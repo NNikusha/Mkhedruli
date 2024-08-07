@@ -38,7 +38,7 @@ const MainPageSix = () => {
                 {TEXTS[language].mainPageSix?.ADDRESS_LABEL}
               </h6>
               <p className="w-full break-words text-white font-extralight text-xs 3xl:text-base text-center lg:text-start">
-                {TEXTS[language].mainPageSix?.ADDRESS}
+
               </p>
             </div>
             <div className="lg:w-[80%]">

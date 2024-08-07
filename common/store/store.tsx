@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 interface ContextProps {
   burgerMenuOpen: boolean;
@@ -11,14 +11,23 @@ interface ContextProps {
 
 const GlobalContext = createContext<ContextProps>({
   burgerMenuOpen: false,
-  setBurgerMenuOpen: (signInmodalOpen: boolean) => {},
-  language: "ENG",
-  setLanguage: (language: string) => {},
+  setBurgerMenuOpen: () => {},
+  language: "ENG", 
+  setLanguage: () => {},
 });
 
-export const GlobalContextProvider = ({ children }: any) => {
+export const GlobalContextProvider = ({ children }: { children: ReactNode }) => {
+
+  const [language, setLanguage] = useState<string>(
+    () => localStorage.getItem("language") || "ENG"
+  );
+
   const [burgerMenuOpen, setBurgerMenuOpen] = useState<boolean>(false);
-  const [language, setLanguage] = useState<string>("ENG");
+
+
+  useEffect(() => {
+    localStorage.setItem("language", language);
+  }, [language]);
 
   return (
     <GlobalContext.Provider
@@ -28,5 +37,6 @@ export const GlobalContextProvider = ({ children }: any) => {
     </GlobalContext.Provider>
   );
 };
+
 
 export const useGlobalContext = () => useContext(GlobalContext);
