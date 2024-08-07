@@ -1,34 +1,28 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import Slider from "react-slick";
 
+import React, { useRef, useState } from "react";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import SwiperComponent from "./SwiperComponent";
 import "./mainPageFiveSwiper.css";
 import SwiperButton from "../SwiperButtons/SwiperButton";
+import { TEXTS } from "../../../locales/languages";
+import { useGlobalContext } from "../../../store/store";
 
-const SwiperData = [
-  {
-    image: "/images/farikaoba.jpg",
-    title:
-    "Discover the rich cultural heritage of Georgia through traditional attire showcased by the Mkhedruli Ensemble. From the iconic Chokha to intricate women's costumes, explore the history and pride of Georgian culture. Click to immerse yourself in the elegance and grandeur of these stunning garments."  },
-  {
-    image: "/images/mkhedruli.jpg",
-    title:
-    "Experience the Spirit of Georgia through traditional attire, intricate dances, and folk music. Explore our performance options and highlights, including graceful movements, evocative music, and iconic costumes. Celebrate Georgia's timeless traditions. Click to discover more."  },
-  {
-    image: "/images/momgerlebi.jpg",
-    title:
-    "Experience the enchanting sounds of Georgian folk instruments with the Mkhedruli Ensemble. Discover the panduri, duduk, doli, and accordion as they bring traditional melodies to life. Click to learn more about how these instruments capture the essence of Georgian culture."  },
-];
+
 function MainPageFiveSwiper() {
-  const middleIndex = Math.floor(SwiperData.length / 2);
+  const { language } = useGlobalContext();
+
+  const SwiperData = TEXTS[language].mainPageFiveSwiper?.SLIDES;
+
+  const middleIndex = Math.floor(SwiperData?.length / 2);
   const [centerIndex, setCenterIndex] = useState(middleIndex);
 
-  const handleAfterChange = (currentSlide) => {
+  const handleAfterChange = (currentSlide: number) => {
     setCenterIndex(currentSlide);
   };
-  const ref = useRef(null);
+
+  const ref = useRef<Slider | null>(null);
 
   const handleNextSlide = () => {
     ref.current?.slickNext();
@@ -52,13 +46,14 @@ function MainPageFiveSwiper() {
     initialSlide: middleIndex,
     afterChange: handleAfterChange,
   };
+
   return (
     <>
       <Slider {...settings} className="slider" ref={ref}>
-        {SwiperData.map((assessment, i) => (
+        {SwiperData?.map((slide, i) => (
           <SwiperComponent
-            image={assessment.image}
-            title={assessment.title}
+            image={slide.IMAGE}
+            title={slide.TITLE}
             key={i}
             isCenterActive={i === centerIndex}
           />

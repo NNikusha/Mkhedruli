@@ -9,6 +9,8 @@ const languages = [
   { src: "/images/esp-flag.svg", lang: "ESP" },
   { src: "/images/chn-flag.svg", lang: "CHN" },
   { src: "/images/jpn-flag.svg", lang: "JPN" },
+  { src: "/images/bgn.jpg", lang: "BGN" },
+
 ];
 
 const LangSwitcher = () => {
