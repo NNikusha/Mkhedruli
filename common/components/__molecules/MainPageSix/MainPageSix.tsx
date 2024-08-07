@@ -8,7 +8,7 @@ import FacebookIcon from "../../../../public/icons/FacebookIcon";
 import YoutubeIcon from "../../../../public/icons/YoutubeIcon";
 import Link from "next/link";
 import { useGlobalContext } from "../../../store/store";
-import { TEXTS } from "../../../locales/languages";
+import {TEXTS} from "../../../locales/languages"
 
 const MainPageSix = () => {
   const { language } = useGlobalContext();

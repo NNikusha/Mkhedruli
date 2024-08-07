@@ -17,16 +17,20 @@ const GlobalContext = createContext<ContextProps>({
 });
 
 export const GlobalContextProvider = ({ children }: { children: ReactNode }) => {
-
-  const [language, setLanguage] = useState<string>(
-    () => localStorage.getItem("language") || "ENG"
-  );
+  const [language, setLanguage] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem("language") || "ENG";
+    } else {
+      return "ENG";
+    }
+  });
 
   const [burgerMenuOpen, setBurgerMenuOpen] = useState<boolean>(false);
 
-
   useEffect(() => {
-    localStorage.setItem("language", language);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem("language", language);
+    }
   }, [language]);
 
   return (
@@ -37,6 +41,5 @@ export const GlobalContextProvider = ({ children }: { children: ReactNode }) => 
     </GlobalContext.Provider>
   );
 };
-
 
 export const useGlobalContext = () => useContext(GlobalContext);
