@@ -3,7 +3,6 @@ import LangSwitcherItem from "../../__atoms/LangSwitcherItem/LangSwitcherItem";
 import { useGlobalContext } from "../../../store/store";
 
 const languages = [
-  { src: "/images/geo-flag.svg", lang: "GEO" },
   { src: "/images/eng-flag.png", lang: "ENG" },
   { src: "/images/fra-flag.svg", lang: "FRA" },
   { src: "/images/esp-flag.svg", lang: "ESP" },
