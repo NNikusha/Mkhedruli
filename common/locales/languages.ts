@@ -7,11 +7,15 @@ export const TEXTS = {
         THESHOW: "შოუ",
         GALLERY: "გალერეა",
       },
+      footer: {
+        TAGLINE: "სახელმწიფო სიმღერისა და ცეკვის ანსამბლი",
+        MENU: "მენიუ",
+        RIGHTS: "ყველა უფლება დაცულია.",
+      },
       mainPageOne: {
-        STATE: "სახელმწიფო",
-        SONGAND: "სიმღერისა და",
-        DANCE: "ცეკვის",
-        ENSEMBLE: "ანსამბლი",
+        GEORGIAN: "ქართული",
+        DANCEENSEMBLE: "საცეკვაო ანსამბლი",
+        MKHEDRULI: "მხედრული",
         WATCHNOW: "უყურეთ ახლა",
       },
       mainPageThree: {
@@ -175,11 +179,15 @@ export const TEXTS = {
         THESHOW: "THE SHOW",
         GALLERY: "GALLERY",
       },
+      footer: {
+        TAGLINE: "State Song and Dance Ensemble",
+        MENU: "Menu",
+        RIGHTS: "All rights reserved.",
+      },
       mainPageOne: {
-        STATE: "STATE",
-        SONGAND: "SONG AND",
-        DANCE: "DANCE",
-        ENSEMBLE: "ENSEMBLE",
+        GEORGIAN: "GEORGIAN",
+        DANCEENSEMBLE: "DANCE ENSEMBLE",
+        MKHEDRULI: "MKHEDRULI",
         WATCHNOW: "Watch Now",
       },
       mainPageThree: {
@@ -345,11 +353,15 @@ export const TEXTS = {
         THESHOW: "LE SPECTACLE",
         GALLERY: "GALERIE",
       },
+      footer: {
+        TAGLINE: "Ensemble d'État de Chant et de Danse",
+        MENU: "Menu",
+        RIGHTS: "Tous droits réservés.",
+      },
       mainPageOne: {
-        STATE: "ÉTAT",
-        SONGAND: "CHANT ET",
-        DANCE: "DANSE",
-        ENSEMBLE: "ENSEMBLE",
+        GEORGIAN: "GÉORGIEN",
+        DANCEENSEMBLE: "ENSEMBLE DE DANSE",
+        MKHEDRULI: "MKHEDRULI",
         WATCHNOW: "Regardez Maintenant",
       },
       mainPageThree: {
@@ -517,11 +529,15 @@ export const TEXTS = {
         THESHOW: "EL ESPECTÁCULO",
         GALLERY: "GALERÍA",
       },
+      footer: {
+        TAGLINE: "Conjunto Estatal de Canto y Danza",
+        MENU: "Menú",
+        RIGHTS: "Todos los derechos reservados.",
+      },
       mainPageOne: {
-        STATE: "ESTADO",
-        SONGAND: "CANCIÓN Y",
-        DANCE: "BAILE",
-        ENSEMBLE: "ENSEMBLE",
+        GEORGIAN: "GEORGIANO",
+        DANCEENSEMBLE: "CONJUNTO DE BAILE",
+        MKHEDRULI: "MKHEDRULI",
         WATCHNOW: "Ver Ahora",
       },
       mainPageThree: {
@@ -689,11 +705,15 @@ export const TEXTS = {
         THESHOW: "表演",
         GALLERY: "画廊",
       },
+      footer: {
+        TAGLINE: "国家歌舞团",
+        MENU: "菜单",
+        RIGHTS: "版权所有。",
+      },
       mainPageOne: {
-        STATE: "州",
-        SONGAND: "歌曲和",
-        DANCE: "舞蹈",
-        ENSEMBLE: "合奏",
+        GEORGIAN: "格鲁吉亚",
+        DANCEENSEMBLE: "舞蹈团",
+        MKHEDRULI: "MKHEDRULI",
         WATCHNOW: "现在观看",
       },
       mainPageThree: {
@@ -858,11 +878,15 @@ export const TEXTS = {
             THESHOW: "ШОУТО",
             GALLERY: "ГАЛЕРИЯ",
         },
+        footer: {
+            TAGLINE: "Държавен ансамбъл за песни и танци",
+            MENU: "Меню",
+            RIGHTS: "Всички права запазени.",
+        },
         mainPageOne: {
-            STATE: "ДЪРЖАВА",
-            SONGAND: "ПЕСЕН И",
-            DANCE: "ТАНЦ",
-            ENSEMBLE: "АНСАМБЪЛ",
+            GEORGIAN: "ГРУЗИНСКИ",
+            DANCEENSEMBLE: "ТАНЦОВ АНСАМБЪЛ",
+            MKHEDRULI: "МХЕДРУЛИ",
             WATCHNOW: "Гледай сега",
         },
         mainPageThree: {
@@ -1028,11 +1052,15 @@ export const TEXTS = {
         THESHOW: "ショー",
         GALLERY: "ギャラリー",
       },
+      footer: {
+        TAGLINE: "国立歌舞アンサンブル",
+        MENU: "メニュー",
+        RIGHTS: "全著作権所有。",
+      },
       mainPageOne: {
-        STATE: "州",
-        SONGAND: "歌と",
-        DANCE: "ダンス",
-        ENSEMBLE: "アンサンブル",
+        GEORGIAN: "ジョージアン",
+        DANCEENSEMBLE: "ダンスアンサンブル",
+        MKHEDRULI: "MKHEDRULI",
         WATCHNOW: "今すぐ見る",
       },
       mainPageThree: {

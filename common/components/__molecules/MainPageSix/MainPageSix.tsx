@@ -9,6 +9,14 @@ import YoutubeIcon from "../../../../public/icons/YoutubeIcon";
 import Link from "next/link";
 import { useGlobalContext } from "../../../store/store";
 import {TEXTS} from "../../../locales/languages"
+import FadeIn from "../../__atoms/FadeIn/FadeIn";
+
+const PHONE_NUMBERS = [
+  "+995 595 700 212",
+  "+995 568 101 135",
+  "+380 98 442 87 53",
+  "+353 87 751 98 94",
+];
 
 const MainPageSix = () => {
   const { language } = useGlobalContext();
@@ -26,7 +34,7 @@ const MainPageSix = () => {
         </h3>
         <GoldLine className="w-full h-[2px] flex" />
       </div>
-      <div className="flex-1 flex lg:items-center justify-center items-end pb-16 lg:pb-0">
+      <FadeIn direction="up" className="flex-1 flex lg:items-center justify-center items-end pb-16 lg:pb-0 w-full">
         <div
           className="3xl:w-[900px] 3xl:h-[600px] lg:w-[720px] lg:h-[450px] bg-[#161616] 3xl:border-[4px] border-[3px] border-[#fde39753] lg:ml-40 w-[310px] flex items-center relative flex-col lg:flex-row"
           style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
@@ -38,16 +46,25 @@ const MainPageSix = () => {
                 {TEXTS[language].mainPageSix?.ADDRESS_LABEL}
               </h6>
               <p className="w-full break-words text-white font-extralight text-xs 3xl:text-base text-center lg:text-start">
-
+                {TEXTS[language].mainPageSix?.ADDRESS}
               </p>
             </div>
             <div className="lg:w-[80%]">
               <h6 className="text-[#FDE497] mb-2 3xl:text-xl text-base text-center lg:text-start">
                 {TEXTS[language].mainPageSix?.PHONE_LABEL}
               </h6>
-              <div className="w-full break-words text-white font-extralight text-xs 3xl:text-base text-center lg:text-start">
-                <div>+995 595 700 212</div>
-                <div>+995 568 101 135</div>
+              <div className="w-full break-words text-white font-extralight text-xs 3xl:text-base text-center lg:text-start flex flex-col gap-1">
+                {PHONE_NUMBERS.map((phone) => (
+                  <a
+                    key={phone}
+                    href={`https://wa.me/${phone.replace(/[^\d]/g, "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#FDE497] duration-200"
+                  >
+                    {phone}
+                  </a>
+                ))}
               </div>
             </div>
             {/* <div className="lg:w-[80%] w-full">
@@ -71,7 +88,7 @@ const MainPageSix = () => {
             </div> */}
           </div>
         </div>{" "}
-      </div>
+      </FadeIn>
     </section>
   );
 };

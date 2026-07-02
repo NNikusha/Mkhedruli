@@ -8,7 +8,6 @@ import RunningLine from "../common/components/__atoms/RunningLine/RunningLine";
 import MainPageSix from "../common/components/__molecules/MainPageSix/MainPageSix";
 import { Metadata } from "next";
 import Head from "next/head";
-import Script from "next/script";
 
 interface Props {
   params: {
@@ -57,8 +56,6 @@ export default function Home() {
         <MainPageFive />
         <MainPageSix />
       </div>
-      <div id="top-ge-counter-container" data-site-id="117516"></div>
-      <Script src="//counter.top.ge/counter.js" strategy="afterInteractive" />
     </>
   );
 }

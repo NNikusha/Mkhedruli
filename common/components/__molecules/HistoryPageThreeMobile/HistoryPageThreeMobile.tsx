@@ -15,8 +15,10 @@ const HistoryPageThreeMobile = () => {
         <div className="flex flex-col items-center gap-4 z-10">
           <div className="items-center w-[260px] text-[#FFFF] leading-7 text-sm font-light z-10">
             <div className="flex w-full h-[260px] bg-dancersPiramid bg-cover bg-no-repeat bg-bottom grayscale z-10"></div>
-            <span className="text-2xl mt-2">M</span>
-            {TEXTS[language].historyPageThree.DESCRIPTION}
+            <span className="text-2xl mt-2">
+              {TEXTS[language].historyPageThree.DESCRIPTION.charAt(0)}
+            </span>
+            {TEXTS[language].historyPageThree.DESCRIPTION.slice(1)}
             <div className="flex flex-1 h-[150px] bg-mkhedruliDancers bg-cover bg-no-repeat bg-bottom mt-2 z-20"></div>
             <div className="w-full h-[150px] bg-musicians bg-cover bg-no-repeat bg-bottom mt-2 z-20"></div>
             <div className="w-full h-[150px] bg-historyPhoto bg-cover bg-bottom bg-no-repeat mt-2 z-20"></div>

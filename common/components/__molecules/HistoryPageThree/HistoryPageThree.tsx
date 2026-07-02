@@ -17,8 +17,10 @@ const HistoryPageThree = () => {
         <div className="h-full gap-10">
           <div className="flex ">
             <div className="items-centerflex w-2/5 py-[120px] px-[60px] text-[#FFFF] leading-7">
-              <span className="text-4xl">M</span>
-              {TEXTS[language].historyPageThree.DESCRIPTION}
+              <span className="text-4xl">
+                {TEXTS[language].historyPageThree.DESCRIPTION.charAt(0)}
+              </span>
+              {TEXTS[language].historyPageThree.DESCRIPTION.slice(1)}
             </div>
             <div className="w-3/5 flex flex-row gap-4">
               <div className="flex flex-1 h-[445px] bg-dancersPiramid bg-cover bg-no-repeat bg-bottom grayscale"></div>

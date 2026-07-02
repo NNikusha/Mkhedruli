@@ -1,5 +1,6 @@
 import { GlobalContextProvider } from "../../../store/store";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 export default function MainLayout({
   children,
@@ -11,6 +12,7 @@ export default function MainLayout({
       <div className="font-montserrat overflow-x-hidden overflow-y-hidden">
         <Header />
         {children}
+        <Footer />
       </div>
     </GlobalContextProvider>
   );

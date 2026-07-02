@@ -17,11 +17,12 @@ const Header = () => {
     <>
       <header className="bg-transparent text-white 3xl:text-2xl text-base flex justify-between 3xl:px-10 3xl:py-6 px-8 py-2  fixed w-full items-center backdrop-blur-md z-50">
         <Image
-          src={"/icons/logo.svg"}
+          src={"/icons/mkhedruli-logo-horizontal.png"}
           alt="logo"
           width={0}
           height={0}
-          className="3xl:w-[62px] 3xl:h-[57px] w-[52px] h-[47px] cursor-pointer z-50"
+          sizes="100vw"
+          className="3xl:w-[240px] 3xl:h-auto w-[180px] h-auto cursor-pointer z-50 brightness-0 invert"
           onClick={() => {
             router.push("/");
             setBurgerMenuOpen(false);
