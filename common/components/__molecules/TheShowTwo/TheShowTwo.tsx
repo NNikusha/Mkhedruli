@@ -38,13 +38,27 @@ const TheShowTwo = () => {
                 <h2 className="text-2xl font-semibold mb-3">
                   {TEXTS[language].theShow.TWO.PROGRAM_TITLE}
                 </h2>
-                <ul className="list-disc list-inside mb-6">
+                <p className="text-base opacity-80 mb-6">
+                  {TEXTS[language].theShow.TWO.PROGRAM_NOTE}
+                </p>
+                <div className="flex flex-col gap-6 mb-6">
                   {TEXTS[language].theShow.TWO.PROGRAM_OPTIONS.map((option, index) => (
-                    <li key={index} className="mb-2">
-                      {option}
-                    </li>
+                    <div key={index}>
+                      <h3 className="text-xl font-semibold uppercase tracking-wide">
+                        {index + 1}. {option.TITLE}
+                      </h3>
+                      <p className="text-[#C9A227] font-semibold uppercase text-base mt-1">
+                        {option.COUNT}
+                      </p>
+                      <ul className="list-disc list-inside my-2 text-base">
+                        {option.ROLES.map((role, roleIndex) => (
+                          <li key={roleIndex}>{role}</li>
+                        ))}
+                      </ul>
+                      <p className="text-base opacity-90">{option.DESCRIPTION}</p>
+                    </div>
                   ))}
-                </ul>
+                </div>
 
                 <h2 className="text-2xl font-semibold mb-3">
                   {TEXTS[language].theShow.TWO.HIGHLIGHTS_TITLE}
