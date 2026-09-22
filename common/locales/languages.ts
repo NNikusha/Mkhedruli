@@ -143,11 +143,48 @@ export const TEXTS = {
           TITLE: "საქართველოს სული შოუ",
           DESCRIPTION_1: "გამოიკვლიეთ საქართველოს მდიდარი მემკვიდრეობა ჩვენი ცეკვისა და მუსიკის შესრულებებით.",
           PROGRAM_TITLE: "პროგრამის ვარიანტები",
+          PROGRAM_NOTE:
+            "ყველა პროგრამა მოიცავს სამხატვრო ხელმძღვანელს, მენეჯერსა და ტექნიკურ მენეჯერს.",
           PROGRAM_OPTIONS: [
-            "სტანდარტული (1.15 საათი): 37 წევრი წინასწარ ჩაწერილი მუსიკით.",
-            "გაფართოებული (1.20 საათი): 50 წევრი, ცოცხალი მუსიკა.",
-            "გაშლილი (1.30 საათი): 37 წევრი, ღრმა ტრადიციები.",
-            "დიდი (1.30 საათი): 61 წევრი, ცოცხალი მუსიკა, დიდი ანსამბლი.",
+            {
+              TITLE: "სრული ანსამბლი ცოცხალი მუსიკით",
+              COUNT: "55 ადამიანი",
+              ROLES: [
+                "მოცეკვავეები",
+                "მუსიკოსები / ცოცხალი ორკესტრი",
+                "მომღერლები",
+                "სამხატვრო ხელმძღვანელი",
+                "მენეჯერი",
+                "ტექნიკური მენეჯერი",
+              ],
+              DESCRIPTION:
+                "სრულმასშტაბიანი წარმოდგენა ცოცხალი მუსიკით, მოცეკვავეებითა და პროფესიონალი მომღერლებით.",
+            },
+            {
+              TITLE: "მოცეკვავეები და მომღერლები ჩაწერილი მუსიკით",
+              COUNT: "45 ადამიანი",
+              ROLES: [
+                "მოცეკვავეები",
+                "მომღერლები",
+                "სამხატვრო ხელმძღვანელი",
+                "მენეჯერი",
+                "ტექნიკური მენეჯერი",
+              ],
+              DESCRIPTION:
+                "დინამიური წარმოდგენა მოცეკვავეებითა და პროფესიონალი მომღერლებით, მაღალი ხარისხის ჩაწერილი მუსიკის თანხლებით.",
+            },
+            {
+              TITLE: "მხოლოდ მოცეკვავეები ჩაწერილი მუსიკით",
+              COUNT: "45 ადამიანი",
+              ROLES: [
+                "მოცეკვავეები",
+                "სამხატვრო ხელმძღვანელი",
+                "მენეჯერი",
+                "ტექნიკური მენეჯერი",
+              ],
+              DESCRIPTION:
+                "ძლიერი საცეკვაო წარმოდგენა, რომელიც წარმოაჩენს ქართული ცეკვის ენერგიას, ოსტატობასა და ტრადიციებს, მაღალი ხარისხის ჩაწერილი მუსიკის თანხლებით.",
+            },
           ],
           HIGHLIGHTS_TITLE: "შესრულების გამორჩეული მომენტები",
           HIGHLIGHTS: [
@@ -314,15 +351,52 @@ export const TEXTS = {
           IMAGE_TEXT: "Discover Georgian Heritage Through Traditional Attire",
         },
         TWO: {
-          TITLE: "Spirit of Georgia Show",
+          TITLE: "The Spirit of Georgia Show",
           DESCRIPTION_1:
             "Explore the rich heritage of Georgia through our dance and music performances.",
           PROGRAM_TITLE: "Program Options",
+          PROGRAM_NOTE:
+            "All programs include the Artistic Director, Manager, and Technical Manager.",
           PROGRAM_OPTIONS: [
-            "Standard (1.15 Hours): 37 members with pre-recorded music.",
-            "Enhanced (1.20 Hours): 50 members, live music.",
-            "Extended (1.30 Hours): 37 members, deeper traditions.",
-            "Grand (1.30 Hours): 61 members, live music, large ensemble.",
+            {
+              TITLE: "Full Ensemble with Live Music",
+              COUNT: "55 People",
+              ROLES: [
+                "Dancers",
+                "Musicians / Live Orchestra",
+                "Singers",
+                "Artistic Director",
+                "Manager",
+                "Technical Manager",
+              ],
+              DESCRIPTION:
+                "A full-scale production featuring live music, dancers, and professional singers.",
+            },
+            {
+              TITLE: "Dancers & Singers with Recorded Music",
+              COUNT: "45 People",
+              ROLES: [
+                "Dancers",
+                "Singers",
+                "Artistic Director",
+                "Manager",
+                "Technical Manager",
+              ],
+              DESCRIPTION:
+                "A dynamic performance featuring dancers and professional singers, accompanied by high-quality recorded music.",
+            },
+            {
+              TITLE: "Dancers Only with Recorded Music",
+              COUNT: "45 People",
+              ROLES: [
+                "Dancers",
+                "Artistic Director",
+                "Manager",
+                "Technical Manager",
+              ],
+              DESCRIPTION:
+                "A powerful dance performance showcasing the energy, artistry, and traditions of Georgian dance, accompanied by high-quality recorded music.",
+            },
           ],
           HIGHLIGHTS_TITLE: "Performance Highlights",
           HIGHLIGHTS: [
@@ -493,11 +567,48 @@ export const TEXTS = {
           DESCRIPTION_1:
             "Explorez le riche patrimoine de la Géorgie à travers nos performances de danse et de musique.",
           PROGRAM_TITLE: "Options de programme",
+          PROGRAM_NOTE:
+            "Tous les programmes incluent le directeur artistique, le manager et le régisseur technique.",
           PROGRAM_OPTIONS: [
-            "Standard (1.15 heures) : 37 membres avec musique préenregistrée.",
-            "Amélioré (1.20 heures) : 50 membres, musique en direct.",
-            "Étendu (1.30 heures) : 37 membres, traditions plus profondes.",
-            "Grand (1.30 heures) : 61 membres, musique en direct, grand ensemble.",
+            {
+              TITLE: "Ensemble complet avec musique live",
+              COUNT: "55 personnes",
+              ROLES: [
+                "Danseurs",
+                "Musiciens / Orchestre live",
+                "Chanteurs",
+                "Directeur artistique",
+                "Manager",
+                "Régisseur technique",
+              ],
+              DESCRIPTION:
+                "Une production à grande échelle avec musique live, danseurs et chanteurs professionnels.",
+            },
+            {
+              TITLE: "Danseurs et chanteurs avec musique enregistrée",
+              COUNT: "45 personnes",
+              ROLES: [
+                "Danseurs",
+                "Chanteurs",
+                "Directeur artistique",
+                "Manager",
+                "Régisseur technique",
+              ],
+              DESCRIPTION:
+                "Un spectacle dynamique avec danseurs et chanteurs professionnels, accompagné d'une musique enregistrée de haute qualité.",
+            },
+            {
+              TITLE: "Danseurs uniquement avec musique enregistrée",
+              COUNT: "45 personnes",
+              ROLES: [
+                "Danseurs",
+                "Directeur artistique",
+                "Manager",
+                "Régisseur technique",
+              ],
+              DESCRIPTION:
+                "Un spectacle de danse puissant qui met en valeur l'énergie, l'art et les traditions de la danse géorgienne, accompagné d'une musique enregistrée de haute qualité.",
+            },
           ],
           HIGHLIGHTS_TITLE: "Points forts de la performance",
           HIGHLIGHTS: [
@@ -669,11 +780,48 @@ export const TEXTS = {
           DESCRIPTION_1:
             "Explora el rico patrimonio de Georgia a través de nuestras actuaciones de danza y música.",
           PROGRAM_TITLE: "Opciones de programa",
+          PROGRAM_NOTE:
+            "Todos los programas incluyen al director artístico, al mánager y al director técnico.",
           PROGRAM_OPTIONS: [
-            "Estándar (1.15 horas): 37 miembros con música pregrabada.",
-            "Mejorado (1.20 horas): 50 miembros, música en vivo.",
-            "Extendido (1.30 horas): 37 miembros, tradiciones más profundas.",
-            "Gran (1.30 horas): 61 miembros, música en vivo, gran conjunto.",
+            {
+              TITLE: "Ensamble completo con música en vivo",
+              COUNT: "55 personas",
+              ROLES: [
+                "Bailarines",
+                "Músicos / Orquesta en vivo",
+                "Cantantes",
+                "Director artístico",
+                "Mánager",
+                "Director técnico",
+              ],
+              DESCRIPTION:
+                "Una producción a gran escala con música en vivo, bailarines y cantantes profesionales.",
+            },
+            {
+              TITLE: "Bailarines y cantantes con música grabada",
+              COUNT: "45 personas",
+              ROLES: [
+                "Bailarines",
+                "Cantantes",
+                "Director artístico",
+                "Mánager",
+                "Director técnico",
+              ],
+              DESCRIPTION:
+                "Una actuación dinámica con bailarines y cantantes profesionales, acompañada de música grabada de alta calidad.",
+            },
+            {
+              TITLE: "Solo bailarines con música grabada",
+              COUNT: "45 personas",
+              ROLES: [
+                "Bailarines",
+                "Director artístico",
+                "Mánager",
+                "Director técnico",
+              ],
+              DESCRIPTION:
+                "Una potente actuación de danza que muestra la energía, el arte y las tradiciones de la danza georgiana, acompañada de música grabada de alta calidad.",
+            },
           ],
           HIGHLIGHTS_TITLE: "Aspectos destacados de la actuación",
           HIGHLIGHTS: [
@@ -842,11 +990,48 @@ export const TEXTS = {
           TITLE: "格鲁吉亚精神表演",
           DESCRIPTION_1: "通过我们的舞蹈和音乐表演探索格鲁吉亚的丰富遗产。",
           PROGRAM_TITLE: "节目选项",
+          PROGRAM_NOTE:
+            "所有节目均包含艺术总监、经理和技术总监。",
           PROGRAM_OPTIONS: [
-            "标准（1.15 小时）：37 名成员，带预录音乐。",
-            "增强型（1.20 小时）：50 名成员，现场音乐。",
-            "扩展版（1.30 小时）：37 名成员，更深入的传统。",
-            "盛大版（1.30 小时）：61 名成员，现场音乐，大型合奏。",
+            {
+              TITLE: "完整乐团与现场音乐",
+              COUNT: "55 人",
+              ROLES: [
+                "舞者",
+                "乐手 / 现场乐队",
+                "歌手",
+                "艺术总监",
+                "经理",
+                "技术总监",
+              ],
+              DESCRIPTION:
+                "大型演出，配有现场音乐、舞者和专业歌手。",
+            },
+            {
+              TITLE: "舞者与歌手，配录制音乐",
+              COUNT: "45 人",
+              ROLES: [
+                "舞者",
+                "歌手",
+                "艺术总监",
+                "经理",
+                "技术总监",
+              ],
+              DESCRIPTION:
+                "充满活力的演出，由舞者和专业歌手呈现，配以高品质录制音乐。",
+            },
+            {
+              TITLE: "仅舞者，配录制音乐",
+              COUNT: "45 人",
+              ROLES: [
+                "舞者",
+                "艺术总监",
+                "经理",
+                "技术总监",
+              ],
+              DESCRIPTION:
+                "震撼的舞蹈演出，展现格鲁吉亚舞蹈的活力、艺术性与传统，配以高品质录制音乐。",
+            },
           ],
           HIGHLIGHTS_TITLE: "表演亮点",
           HIGHLIGHTS: [
@@ -1016,11 +1201,48 @@ export const TEXTS = {
                 DESCRIPTION_1:
                     "Изследвайте богатото наследство на Грузия чрез нашите танцови и музикални изпълнения.",
                 PROGRAM_TITLE: "Опции за програма",
+                PROGRAM_NOTE:
+                  "Всички програми включват художествен ръководител, мениджър и технически мениджър.",
                 PROGRAM_OPTIONS: [
-                    "Стандартна (1.15 часа): 37 членове с предварително записана музика.",
-                    "Подобрена (1.20 часа): 50 членове, жива музика.",
-                    "Разширена (1.30 часа): 37 членове, по-дълбоки традиции.",
-                    "Голяма (1.30 часа): 61 членове, жива музика, голям ансамбъл.",
+                  {
+                    TITLE: "Пълен ансамбъл с жива музика",
+                    COUNT: "55 души",
+                    ROLES: [
+                      "Танцьори",
+                      "Музиканти / Жив оркестър",
+                      "Певци",
+                      "Художествен ръководител",
+                      "Мениджър",
+                      "Технически мениджър",
+                    ],
+                    DESCRIPTION:
+                      "Мащабна продукция с жива музика, танцьори и професионални певци.",
+                  },
+                  {
+                    TITLE: "Танцьори и певци със записана музика",
+                    COUNT: "45 души",
+                    ROLES: [
+                      "Танцьори",
+                      "Певци",
+                      "Художествен ръководител",
+                      "Мениджър",
+                      "Технически мениджър",
+                    ],
+                    DESCRIPTION:
+                      "Динамично представление с танцьори и професионални певци, съпроводено от висококачествена записана музика.",
+                  },
+                  {
+                    TITLE: "Само танцьори със записана музика",
+                    COUNT: "45 души",
+                    ROLES: [
+                      "Танцьори",
+                      "Художествен ръководител",
+                      "Мениджър",
+                      "Технически мениджър",
+                    ],
+                    DESCRIPTION:
+                      "Мощно танцово представление, което показва енергията, артистичността и традициите на грузинския танц, съпроводено от висококачествена записана музика.",
+                  },
                 ],
                 HIGHLIGHTS_TITLE: "Акценти на изпълнението",
                 HIGHLIGHTS: [
@@ -1191,11 +1413,48 @@ export const TEXTS = {
           DESCRIPTION_1:
             "私たちのダンスと音楽のパフォーマンスを通じて、ジョージアの豊かな遺産を探求してください。",
           PROGRAM_TITLE: "プログラムオプション",
+          PROGRAM_NOTE:
+            "すべてのプログラムには芸術監督、マネージャー、テクニカルマネージャーが含まれます。",
           PROGRAM_OPTIONS: [
-            "スタンダード（1.15時間）：事前録音された音楽を含む37人のメンバー。",
-            "拡張版（1.20時間）：50名、ライブ音楽。",
-            "拡張版（1.30時間）：37名、より深い伝統。",
-            "グランド (1.30 時間): 61 人のメンバー、ライブ音楽、大規模アンサンブル。",
+            {
+              TITLE: "生演奏付きフルアンサンブル",
+              COUNT: "55名",
+              ROLES: [
+                "ダンサー",
+                "ミュージシャン / 生オーケストラ",
+                "歌手",
+                "芸術監督",
+                "マネージャー",
+                "テクニカルマネージャー",
+              ],
+              DESCRIPTION:
+                "生演奏、ダンサー、プロの歌手による大規模な公演。",
+            },
+            {
+              TITLE: "ダンサーと歌手（録音音楽）",
+              COUNT: "45名",
+              ROLES: [
+                "ダンサー",
+                "歌手",
+                "芸術監督",
+                "マネージャー",
+                "テクニカルマネージャー",
+              ],
+              DESCRIPTION:
+                "ダンサーとプロの歌手によるダイナミックな公演を、高音質の録音音楽とともにお届けします。",
+            },
+            {
+              TITLE: "ダンサーのみ（録音音楽）",
+              COUNT: "45名",
+              ROLES: [
+                "ダンサー",
+                "芸術監督",
+                "マネージャー",
+                "テクニカルマネージャー",
+              ],
+              DESCRIPTION:
+                "ジョージアンダンスのエネルギー、芸術性、伝統を示す力強いダンス公演を、高音質の録音音楽とともにお届けします。",
+            },
           ],
           HIGHLIGHTS_TITLE: "パフォーマンスのハイライト",
           HIGHLIGHTS: [
